@@ -1,0 +1,9 @@
+ @media (max-width: 1024px) {
+    .services-grid, .intro-grid, .process-steps { grid-template-columns: 1fr; }
+    .hero-title { font-size: 50px; }
+}
+@media (max-width: 768px) {
+    .nav-links, .desktop-btn { display: none !important; }
+    .hamburger { display: block; }
+    .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+}
