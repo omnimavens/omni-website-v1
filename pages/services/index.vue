@@ -47,7 +47,7 @@ A modular system of specialized services designed to work alone or together. We 
                         <li><i class="fa-solid fa-check"></i> On-Page Optimization</li>
                         <li><i class="fa-solid fa-check"></i> High-DA Link Building</li>
                     </ul>
-                    <a href="/services/seo" class="s-link">Explore SEO <i class="fa-solid fa-arrow-right"></i></a>
+                    <NuxtLink :to="{ name: 'seo-services' }" class="s-link">Explore SEO <i class="fa-solid fa-arrow-right"></i></NuxtLink>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="50">
@@ -61,7 +61,7 @@ A modular system of specialized services designed to work alone or together. We 
                         <li><i class="fa-solid fa-check"></i> Schema Architecture</li>
                         <li><i class="fa-solid fa-check"></i> Knowledge Graph Setup</li>
                     </ul>
-                    <a href="/services/geo-ai-optimization" class="s-link">Explore GEO <i class="fa-solid fa-arrow-right"></i></a>
+                    <NuxtLink :to="{ name: 'geo-ai-optimization'}" class="s-link">Explore GEO <i class="fa-solid fa-arrow-right"></i></NuxtLink>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
@@ -75,7 +75,7 @@ A modular system of specialized services designed to work alone or together. We 
                         <li><i class="fa-solid fa-check"></i> Retargeting Campaigns</li>
                         <li><i class="fa-solid fa-check"></i> Landing Page Consulting</li>
                     </ul>
-                    <a href="/services/ppc-management" class="s-link">Explore PPC <i class="fa-solid fa-arrow-right"></i></a>
+                    <NuxtLink :to="{ name: 'ppc-management'}" class="s-link">Explore PPC <i class="fa-solid fa-arrow-right"></i></NuxtLink>
                 </div>
 
             </div>
@@ -210,6 +210,7 @@ A modular system of specialized services designed to work alone or together. We 
 <script setup lang="ts">
     definePageMeta({
         title: 'Services Page',
+        name: 'services',
     })
 
     useSeoMeta({
