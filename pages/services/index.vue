@@ -101,7 +101,7 @@ A modular system of specialized services designed to work alone or together. We 
                         <li><i class="fa-solid fa-check"></i> Website Copywriting</li>
                         <li><i class="fa-solid fa-check"></i> Lead Magnets / Whitepapers</li>
                     </ul>
-                    <a href="/services/content-marketing" class="s-link">Explore Content <i class="fa-solid fa-arrow-right"></i></a>
+                    <NuxtLink :to="{ name: 'content-marketing'}" class="s-link">Explore Content <i class="fa-solid fa-arrow-right"></i></NuxtLink>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="50">
@@ -115,7 +115,7 @@ A modular system of specialized services designed to work alone or together. We 
                         <li><i class="fa-solid fa-check"></i> Brand Strategy Book</li>
                         <li><i class="fa-solid fa-check"></i> Marketing Collateral</li>
                     </ul>
-                    <a href="/services/branding-creative" class="s-link">Explore Branding <i class="fa-solid fa-arrow-right"></i></a>
+                    <NuxtLink :to="{ name: 'branding-creative' }" class="s-link">Explore Branding <i class="fa-solid fa-arrow-right"></i></NuxtLink>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
@@ -129,7 +129,7 @@ A modular system of specialized services designed to work alone or together. We 
                         <li><i class="fa-solid fa-check"></i> Social Strategy & Mgmt</li>
                         <li><i class="fa-solid fa-check"></i> Video / Reel Production</li>
                     </ul>
-                    <a href="/services/social-media-marketing" class="s-link">Explore Social <i class="fa-solid fa-arrow-right"></i></a>
+                    <NuxtLink :to="{ name: 'social-media-marketing' }" class="s-link">Explore Social <i class="fa-solid fa-arrow-right"></i></NuxtLink>
                 </div>
 
             </div>

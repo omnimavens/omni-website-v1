@@ -16,14 +16,15 @@ Whether you're looking for growth, strategy, or clarity—our experts are here t
 <script setup lang="ts">
     definePageMeta({
         title: 'Home Page',
+        name: 'contact'
     })
 
     useSeoMeta({
-        title: ' Digital Marketing Services', // Will become "Home - My Amazing Site"
+        title: ' Connect with us Now | Digital Marketing Services', // Will become "Home - My Amazing Site"
         description: 'Welcome to the OmniMavens.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Contact OmniMavens - The Digital Marketing Agency',
+        ogTitle: 'Connect with us Now - The Digital Marketing Agency',
         ogDescription: 'Your digital marketing agency focused on you, your business, your results.',
         ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
         twitterCard: 'summary_large_image',
