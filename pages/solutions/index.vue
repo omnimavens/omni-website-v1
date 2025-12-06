@@ -55,10 +55,9 @@ You don't want "SEO" or "PPC." You want revenue, visibility, and leads. We map o
                         <span class="outcome-label">The Outcome</span>
                         <span class="outcome-text">Dominate organic search, local maps, and AI answers.</span>
                     </div>
-
-                    <a href="/solutions/visibility" class="btn-primary" style="text-align: center;">See Discovery Strategy</a>
+                    <NuxtLink :to="{ name: 'visibility' }" class="btn-primary" style="text-align: center;">See Discovery Strategy</NuxtLink>
                 </div>
-
+                
                 <div class="sol-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="sol-header">
                         <i class="fa-solid fa-users sol-icon"></i>
@@ -75,8 +74,8 @@ You don't want "SEO" or "PPC." You want revenue, visibility, and leads. We map o
                         <span class="outcome-label">The Outcome</span>
                         <span class="outcome-text">Consistent flow of high-intent traffic from Google & Social.</span>
                     </div>
-
-                    <a href="/solutions/traffic-generation" class="btn-primary" style="text-align: center;">See Traffic Strategy</a>
+                    
+                    <NuxtLink :to="{ name: 'traffic-generation' }" class="btn-primary" style="text-align: center;">See Traffic Strategy</NuxtLink>
                 </div>
 
                 <div class="sol-card" data-aos="fade-up">

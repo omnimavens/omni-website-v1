@@ -8,6 +8,11 @@
             --border-color: #2a2a2a;
             --text-white: #ffffff;
             --text-gray: #a1a1a1;
+
+            /* Specific Platform Colors */
+            --shopify-green: #96bf48;
+            --wp-blue: #21759b;
+            --react-cyan: #61dafb;
         }
 
         header li, footer li { list-style: none; }
@@ -143,11 +148,37 @@
         .pain-label { font-size: 12px; text-transform: uppercase; color: #666; font-weight: 700; display: block; margin-bottom: 5px; }
         .pain-text { font-size: 14px; color: #ccc; font-style: italic; }
 
-        .outcome-point {
-            padding: 20px; border-radius: 8px; border-left: 3px solid var(--brand-accent); margin-bottom: 30px;
-        }
+        .outcome-point {padding: 20px; border-radius: 8px; border-left: 3px solid var(--brand-accent); margin-bottom: 30px;}
         .outcome-label { font-size: 12px; text-transform: uppercase; color: var(--brand-accent); font-weight: 700; display: block; margin-bottom: 5px; }
         .outcome-text { font-size: 14px; color: #fff; font-weight: 600; }
+
+        /* Inner solutions pages */
+        /* --- STRATEGY MAP (The Solution) --- */
+        .strategy-section { padding: 100px 0; background: #111; }
+        .strategy-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px; }
+        .strat-card { 
+            background: #161616; padding: 40px; border: 1px solid #222; border-radius: 16px; 
+            position: relative; overflow: hidden; transition: 0.3s;
+        }
+        .strat-card:hover { border-color: var(--brand-accent); transform: translateY(-5px); }
+        .strat-num { font-family: 'Syne'; font-size: 50px; font-weight: 800; color: #222; position: absolute; top: 20px; right: 20px; }
+        .strat-icon { font-size: 30px; color: var(--brand-accent); margin-bottom: 20px; }
+        .strat-title { font-size: 22px; margin-bottom: 15px; }
+        .strat-desc { font-size: 14px; color: #888; margin-bottom: 20px; line-height: 1.6; }
+        .strat-link { font-size: 12px; text-transform: uppercase; font-weight: 700; color: #fff; border-bottom: 1px solid #333; }
+
+        .mix-section { padding: 100px 0; }
+        .mix-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; }
+        .mix-list { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .mix-item { 
+            background: #0b0b0b; border: 1px solid #2a2a2a; padding: 20px; border-radius: 8px; 
+            display: flex; align-items: center; gap: 15px; transition: 0.3s;
+        }
+        .mix-item:hover { border-color: var(--brand-accent); }
+        .mix-item i { color: var(--brand-accent); font-size: 18px; }
+        .mix-item span { font-weight: 700; color: #ccc; font-size: 14px; }
+
+
 
         /* --- BY STAGE SECTION --- */
         .stage-section { padding: 100px 0; border-bottom: 1px solid #222; }
@@ -209,13 +240,23 @@
         .uni-btn { width: 100%; background: #E08322; color: #fff; font-weight: 700; text-transform: uppercase; padding: 18px; border: none; border-radius: 50px; cursor: pointer; font-size: 15px; transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; }
         .uni-btn:hover { border: 1px solid var(--brand-accent);color: var(--brand-accent); background: transparent; }
 
+    .phone-group {display: grid;grid-template-columns: 110px 1fr;gap: 10px;}
+    .uni-select {
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23E08322%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat;
+        background-position: right 15px top 50%;
+        background-size: 12px auto;
+        }
+
         /* --- SERVICES CONTENT LAYOUT --- */
         .content-section { padding: 100px 0; }
         .layout-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 80px; align-items: start; }
         /* Content Blocks */
         .content-block { margin-bottom: 60px; }
         .content-block h2 { font-size: 32px; margin-bottom: 20px; line-height: 1.2; }
-        .content-block h3 { font-size: 22px; margin-bottom: 15px; margin-top: 30px; color: #eee; }
+        .content-block h3 { font-size: 22px; margin-bottom: 15px; color: #eee; }
         .content-block p { font-size: 17px; color: #a1a1a1; margin-bottom: 20px; }
         .content-img { width: 100%; border-radius: 12px; margin: 30px 0; border: 1px solid #333; }
 
@@ -296,6 +337,9 @@
         .sc-metric-item h4 { font-size: 32px; color: var(--brand-accent); margin-bottom: 5px; font-family: 'Syne'; }
         .sc-metric-item p { font-size: 12px; text-transform: uppercase; color: #666; letter-spacing: 1px; }
 
+        .sc-grid.reverse { direction: rtl; }
+        .sc-grid.reverse .sc-text { direction: ltr; }
+
 
         /* --- CASE STUDY WRAPPER (Zig Zag) --- */
         .case-study-wrapper { padding: 100px 0; background: linear-gradient(180deg, #0b0b0b 0%, #111 100%); border-top: 1px solid #222; }
@@ -314,6 +358,91 @@
         .cs-metrics { display: flex; gap: 30px; margin-bottom: 30px; border-top: 1px solid #222; padding-top: 20px; }
         .cs-metric h4 { font-size: 28px; color: var(--brand-accent); font-family: 'Syne'; margin-bottom: 5px; }
         .cs-metric p { font-size: 12px; text-transform: uppercase; color: #666; }
+
+        
+        /* --- NEW: META ADS SECTION (FB/IG) --- */
+        .meta-section {
+            padding: 100px 0;
+            background: linear-gradient(180deg, #0b0b0b 0%, #141414 100%);
+            border-top: 1px solid #222; margin-bottom: 80px;
+        }
+        .meta-header { text-align: center; margin-bottom: 60px; }
+        .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .meta-card {
+            background: #1a1a1a; border: 1px solid #333; border-radius: 20px; padding: 40px;
+            transition: 0.3s; position: relative; overflow: hidden;
+        }
+        .meta-card:hover { border-color: var(--brand-accent); transform: translateY(-5px); }
+        /* Watermark Icons */
+        .meta-card::before {display: none;
+            content: ''; position: absolute; top: -20px; right: -20px; font-family: "Font Awesome 6 Brands";
+            font-size: 150px; opacity: 0.03; z-index: 0;
+        }
+        .fb-card::before { content: '\f09a'; } /* Facebook */
+        .ig-card::before { content: '\f16d'; } /* Instagram */
+        
+        .meta-top-icon { font-size: 40px; margin-bottom: 20px; display: inline-block; }
+        .fb-icon-color { color: #1877F2; }
+        /* Instagram Gradient text */
+        .ig-icon-grad { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); -webkit-background-clip: text;background-clip: text; -webkit-text-fill-color: transparent;}
+
+        .meta-card h3 { font-size: 28px; margin-bottom: 15px; position: relative; z-index: 1; }
+        .meta-card p { color: #aaa; margin-bottom: 25px; position: relative; z-index: 1; }
+        .meta-features { list-style: none; position: relative; z-index: 1; }
+        .meta-features li { display: flex; gap: 10px; margin-bottom: 12px; color: #ccc; font-size: 14px; align-items: center; }
+        .meta-features li i { color: var(--brand-accent); font-size: 12px; }
+
+        /* --- PLATFORM POWER SECTION (Styled like your image) --- */
+        .platform-section {
+            padding: 100px 0;
+            background: linear-gradient(180deg, #0b0b0b 0%, #141414 100%);
+            border-top: 1px solid #222; margin-bottom: 80px;
+        }
+        .platform-header { text-align: center; margin-bottom: 60px; }
+        .platform-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        
+        .platform-card {
+            background: #161616; border: 1px solid #333; border-radius: 20px; padding: 40px;
+            transition: 0.3s; position: relative; overflow: hidden; display: flex; flex-direction: column;
+        }
+        
+        /* THE WATERMARK LOGOS (Top Right, Faded) */
+        .platform-card::before {
+            content: ''; position: absolute; top: -30px; right: -30px; font-family: "Font Awesome 6 Brands";
+            font-size: 180px; opacity: 0.05; z-index: 0; pointer-events: none;display: none;
+        }
+        /* Specific Icons for Watermarks */
+        .shopify-card::before { content: '\f957'; color: var(--shopify-green); }
+        .wp-card::before { content: '\f19a'; color: var(--wp-blue); }
+        .react-card::before { content: '\f41b'; color: var(--react-cyan); }
+
+        /* Hover Effects */
+        .shopify-card:hover { border-color: var(--shopify-green); transform: translateY(-5px); }
+        .wp-card:hover { border-color: var(--wp-blue); transform: translateY(-5px); }
+        .react-card:hover { border-color: var(--react-cyan); transform: translateY(-5px); }
+
+        /* Icons & Colors */
+        .plat-icon { font-size: 48px; margin-bottom: 25px; display: inline-block; position: relative; z-index: 1; }
+        .shopify-color { color: var(--shopify-green); }
+        .wp-color { color: var(--wp-blue); }
+        .react-color { color: var(--react-cyan); }
+
+        .platform-card h3 { font-size: 28px; margin-bottom: 15px; position: relative; z-index: 1; color: #fff; }
+        .platform-card p { color: #888; margin-bottom: 30px; font-size: 15px; position: relative; z-index: 1; flex-grow: 1; line-height: 1.6; }
+        
+        /* The List Styling */
+        .plat-features { list-style: none; position: relative; z-index: 1; }
+        .plat-features li { display: flex; gap: 12px; margin-bottom: 15px; color: #ccc; font-size: 14px; align-items: center; }
+        
+        /* The Bullet Points (Solid Circles) */
+        .plat-features li i { font-size: 8px; margin-top: 2px; }
+        .shopify-card li i { color: var(--shopify-green); }
+        .wp-card li i { color: var(--wp-blue); }
+        .react-card li i { color: var(--react-cyan); }
+
+        .pain-list {margin-top: 20px;}
+        .pain-list li {margin-bottom: 10px;display: flex;align-items: center;gap: 15px;color: #aaa;font-size: 16px;}
+        .pain-list li i {color: #ff4d4d;}
         
 
 
@@ -342,7 +471,7 @@
             border-bottom: 1px solid var(--border-color); text-align: center;
         }
         .hero-title { font-size: 70px; line-height: 1.1; margin-bottom: 30px; color: #fff; }
-        .hero-desc { max-width: 700px; margin: 0 auto; color: var(--text-gray); font-size: 20px; margin-bottom: 40px; }
+        .hero-desc { max-width: 780px; margin: 0 auto; color: var(--text-gray); font-size: 20px; margin-bottom: 40px; }
 
         .breadcrumb { font-size: 14px; color: #666; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
         .breadcrumb a:hover { color: var(--brand-accent); }
@@ -363,11 +492,11 @@
         .s-head { display: flex; justify-content: space-between; align-items: start; margin-bottom: 20px; }
         .s-tag { font-size: 10px; text-transform: uppercase; background: #222; padding: 5px 10px; border-radius: 4px; color: #aaa; font-weight: 700; letter-spacing: 1px; }
         
-        .s-desc { font-size: 15px; color: #999; margin-bottom: 25px; line-height: 1.6; }
+        .s-desc { font-size: 16px; color: #999; margin-bottom: 25px; line-height: 1.6; }
         
         /* Deliverables List */
         .s-list { list-style: none; margin-bottom: 30px; border-top: 1px solid #222; padding-top: 20px; flex-grow: 1; }
-        .s-list li { font-size: 14px; color: #ccc; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .s-list li { font-size: 16px; color: #ccc; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
         .s-list li i { color: var(--brand-accent); font-size: 12px; }
         
         .s-link { color: #fff; font-size: 13px; font-weight: 700; text-transform: uppercase; display: flex; align-items: center; gap: 5px; margin-top: auto; }
