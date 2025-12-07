@@ -1,6 +1,9 @@
 <template>
     <section class="about-hero">
         <div class="container">
+            <div class="breadcrumb" data-aos="fade-up">
+                <NuxtLink :to="{ name: 'home' }">Home</NuxtLink> / <NuxtLink :to="{ name: 'solutions' }">Solutions</NuxtLink> / <span style="color:#fff;">Online Visibility</span>
+            </div>
             <h1 class="hero-title" data-aos="fade-up">
                 Dominate The <br> <span class="text-accent">Search Results</span>
             </h1>
@@ -123,6 +126,8 @@
             </div>
         </div>
     </section>
+
+    <ContactFormSection />
 
 </template>
 

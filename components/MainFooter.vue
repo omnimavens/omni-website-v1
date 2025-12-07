@@ -23,7 +23,7 @@
             <li><NuxtLink to="/about-us" class="hover:text-white">About Us</NuxtLink></li>
             <li><NuxtLink to="/services" active-class="active">Services</NuxtLink></li>
             <li><NuxtLink to="/solutions" active-class="active">Solutions</NuxtLink></li>
-            <li><NuxtLink to="/blog" active-class="active">Blogs</NuxtLink></li>
+            <li><NuxtLink to="/blogs" active-class="active">Blogs</NuxtLink></li>
             <li><NuxtLink to="/contact-us" active-class="active">Contact</NuxtLink></li>
           </ul>
         </div>

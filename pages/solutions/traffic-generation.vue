@@ -1,11 +1,14 @@
 <template>
     <section class="about-hero">
         <div class="container">
+            <div class="breadcrumb" data-aos="fade-up">
+                <NuxtLink :to="{ name: 'home' }">Home</NuxtLink> / <NuxtLink :to="{ name: 'solutions' }">Solutions</NuxtLink> / <span style="color:#fff;">Traffic Generation</span>
+            </div>
             <h1 class="hero-title" data-aos="fade-up">
                 Scale Your <br> <span class="text-accent">Visitor Volume</span>
             </h1>
             <p class="hero-desc" data-aos="fade-up" data-aos-delay="100">
-                Stop being the internet's best-kept secret. We build digital infrastructure that forces Google, Maps, and AI answer engines to rank you #1.
+                You have a great product, but you are the internet's best-kept secret. We build multi-channel acquisition systems to open the floodgates. 
             </p>
         </div>
     </section>
@@ -14,16 +17,16 @@
         <div class="container">
             <div class="conn-grid ">
                 <div data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Team Collaboration" class="conn-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Team Collaboration" class="conn-img">
                 </div>
                 <div data-aos="fade-right">
                     <span class="section-subtitle">The Diagnosis</span>
-                    <h2>The "Invisible Brand" Problem</h2>
-                    <p>You have a superior product or service, but your competitors are taking all the market share because they control the search results.</p>
+                    <h2>The "Growth Plateau"</h2>
+                    <p>Referrals dried up? Social organic reach is dead? You've hit a ceiling because you relied on luck instead of a system.</p>
                     <ul class="pain-list" style="list-style: none;">
-                        <li><i class="fa-solid fa-circle-xmark"></i> <strong>Zero Footprint:</strong> You don't show up in Google Maps or "Near Me" searches.</li>
-                        <li><i class="fa-solid fa-circle-xmark"></i> <strong>Wrong Keywords:</strong> Ranking for terms that don't drive revenue.</li>
-                        <li><i class="fa-solid fa-circle-xmark"></i> <strong>AI Blindspot:</strong> ChatGPT and SGE don't know who you are.</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i> <strong>Inconsistent Flow:</strong> Traffic spikes one day, flatlines the next.</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i> <strong>Single Source Risk:</strong> Too dependent on one channel (e.g., just IG).</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i> <strong>Low Quality:</strong> Visitors arrive but bounce immediately.</li>
                     </ul>
                 </div>
                 
@@ -35,32 +38,32 @@
         <div class="container">
             <div style="text-align: center;">
                 <span class="section-subtitle">Our Framework</span>
-                <h2 style="font-size: 40px;">The Omni-Presence Model</h2>
+                <h2 style="font-size: 40px;">The Traffic Triad</h2>
             </div>
             <div class="strategy-cards">
                 
                 <div class="strat-card" data-aos="fade-up" data-aos-delay="0">
                     <span class="strat-num">01</span>
-                    <i class="fa-solid fa-server strat-icon"></i>
-                    <h3 class="strat-title">Technical Base</h3>
-                    <p class="strat-desc">We fix the foundation. Site speed, mobile responsiveness, and crawl errors. Google can't rank what it can't read.</p>
-                    <a href="/services/seo" class="strat-link">View Technical SEO</a>
+                    <i class="fa-solid fa-bolt strat-icon"></i>
+                    <h3 class="strat-title">Paid (Speed)</h3>
+                    <p class="strat-desc">We launch Google & Meta Ads to get immediate data. We buy traffic to validate your offer and get cash flow moving.</p>
+                    <a href="/services/ppc-management" class="strat-link">View Paid Media</a>
                 </div>
 
                 <div class="strat-card" data-aos="fade-up" data-aos-delay="100">
                     <span class="strat-num">02</span>
-                    <i class="fa-solid fa-map-location-dot strat-icon"></i>
-                    <h3 class="strat-title">Local & Entity</h3>
-                    <p class="strat-desc">We establish you as a real entity. We optimize Google Business Profiles (GMB), build citations, and fix knowledge graphs.</p>
-                    <a href="/services/seo/local-seo" class="strat-link">View Local SEO</a>
+                    <i class="fa-solid fa-seedling strat-icon"></i>
+                    <h3 class="strat-title">Organic (Scale)</h3>
+                    <p class="strat-desc">We build SEO infrastructure. We capture "High Intent" searches so you stop paying for every single click.</p>
+                    <a href="/services/seo" class="strat-link">View SEO Services</a>
                 </div>
 
                 <div class="strat-card" data-aos="fade-up" data-aos-delay="200">
                     <span class="strat-num">03</span>
-                    <i class="fa-solid fa-robot strat-icon"></i>
-                    <h3 class="strat-title">AI Authority</h3>
-                    <p class="strat-desc">We optimize for the future. We implement Schema markup and answer-based content to rank in AI snapshots and SGE.</p>
-                    <a href="/services/geo-ai-optimization" class="strat-link">View GEO Services</a>
+                    <i class="fa-solid fa-share-nodes strat-icon"></i>
+                    <h3 class="strat-title">Social (Viral)</h3>
+                    <p class="strat-desc">We deploy short-form video content on TikTok/Reels to tap into algorithmic reach and drive top-of-funnel awareness.</p>
+                    <a href="/services/social-media-marketing" class="strat-link">View Social</a>
                 </div>
 
             </div>
@@ -73,26 +76,26 @@
             <div class="mix-grid">
                 <div data-aos="fade-right">
                     <span class="section-subtitle">The Stack</span>
-                    <h2 style="font-size: 36px; margin-bottom: 20px;">Total Search Domination</h2>
+                    <h2 style="font-size: 36px; margin-bottom: 20px;">Demand Generation Engine</h2>
                     <p style="color: #aaa; margin-bottom: 30px;">
-                        Visibility isn't just one thing. It's the sum of technical health, content relevance, and brand authority.
+                        We don't rely on one hack. We build a diversified traffic portfolio to ensure stability and growth.
                     </p>
                     <div class="mix-list">
-                        <div class="mix-item"><i class="fa-brands fa-google"></i> <span>Google Organic Search</span></div>
-                        <div class="mix-item"><i class="fa-solid fa-map-pin"></i> <span>Local Map Pack (GMB)</span></div>
-                        <div class="mix-item"><i class="fa-solid fa-robot"></i> <span>Google SGE (AI)</span></div>
-                        <div class="mix-item"><i class="fa-solid fa-code"></i> <span>Schema & Structured Data</span></div>
-                        <div class="mix-item"><i class="fa-solid fa-link"></i> <span>Digital PR & Backlinks</span></div>
-                        <div class="mix-item"><i class="fa-solid fa-image"></i> <span>Google Image Search</span></div>
+                        <div class="mix-item"><i class="fa-brands fa-google"></i> <span>Google Search</span></div>
+                        <div class="mix-item"><i class="fa-brands fa-meta"></i> <span>Meta Advantage+</span></div>
+                        <div class="mix-item"><i class="fa-solid fa-magnifying-glass-chart"></i> <span>SEO Content Clusters</span></div>
+                        <div class="mix-item"><i class="fa-brands fa-tiktok"></i> <span>TikTok Spark Ads</span></div>
+                        <div class="mix-item"><i class="fa-solid fa-video"></i> <span>YouTube Discovery</span></div>
+                        <div class="mix-item"><i class="fa-solid fa-robot"></i> <span>GEO / AI Search</span></div>
                     </div>
                 </div>
                 <div data-aos="fade-left" style="background: #161616; padding: 40px; border-radius: 12px; border: 1px solid #333;">
                     <h4 style="margin-bottom: 20px;">Expected Outcomes</h4>
                     <ul class="check-list" style="margin: 0;">
-                        <li style="margin-bottom: 15px;"><i class="text-accent fa-solid fa-check"></i> Top 3 Rankings for "Buyer Keywords"</li>
-                        <li style="margin-bottom: 15px;"><i class="text-accent fa-solid fa-check"></i> Presence in Local 3-Pack</li>
-                        <li style="margin-bottom: 15px;"><i class="text-accent fa-solid fa-check"></i> Citation in AI Answers</li>
-                        <li><i class="text-accent fa-solid fa-check"></i> Increased Domain Authority (DA)</li>
+                        <li style="margin-bottom: 15px;"><i class="text-accent fa-solid fa-check"></i> 2x-5x Monthly Visitor Growth</li>
+                        <li style="margin-bottom: 15px;"><i class="text-accent fa-solid fa-check"></i> Reduced Cost Per Click (CPC)</li>
+                        <li style="margin-bottom: 15px;"><i class="text-accent fa-solid fa-check"></i> Diversified Acquisition Channels</li>
+                        <li><i class="text-accent fa-solid fa-check"></i> Ranking for "Money Keywords"</li>
                     </ul>
                 </div>
             </div>
@@ -104,25 +107,27 @@
             <div class="sc-grid">
                 <div data-aos="fade-right">
                     <div class="sc-image-wrap">
-                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop" alt="Local Map Growth" class="sc-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" alt="Traffic Growth Graph" class="sc-img">
                     </div>
                 </div>
                 <div data-aos="fade-left">
-                    <span class="sc-tag">Local Business</span>
-                    <h2 class="sc-title">Dominating the "Near Me" Market</h2>
+                    <span class="sc-tag">E-Commerce Growth</span>
+                    <h2 class="sc-title">0 to 100k Monthly Visitors</h2>
                     <p class="sc-desc">
-                        A multi-location dental group was invisible on maps. We standardized their NAP (Name, Address, Phone) data, optimized GMB categories, and built local backlinks. They now own the map pack in 5 cities.
+                        A new home decor brand launched with zero audience. We deployed a "Traffic Triad" strategy: Google Shopping for sales, SEO blogs for discovery, and Pinterest Ads for visual reach.
                     </p>
                     <div class="sc-metrics">
-                        <div class="sc-metric-item"><h4>+300%</h4><p>Map Views</p></div>
-                        <div class="sc-metric-item"><h4>#1</h4><p>Rank</p></div>
-                        <div class="sc-metric-item"><h4>2x</h4><p>Calls Booked</p></div>
+                        <div class="sc-metric-item"><h4>100k</h4><p>Monthly Visits</p></div>
+                        <div class="sc-metric-item"><h4>6 Months</h4><p>Time to Scale</p></div>
+                        <div class="sc-metric-item"><h4>$0.35</h4><p>Avg CPC</p></div>
                     </div>
                     <a href="/case-studies.html" class="btn-primary" style="padding: 12px 30px;">Read Full Story</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <ContactFormSection />
 
 </template>
 

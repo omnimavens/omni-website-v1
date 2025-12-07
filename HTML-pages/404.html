@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Page Not Found - Omni Mavens</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- RESET & CORE --- */
+        :root {
+            --brand-accent: #E08322;
+            --bg-color: #050505;
+            --text-white: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; cursor: none; /* Hides default cursor */ }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            font-family: 'Manrope', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* --- CUSTOM CURSOR --- */
+        .cursor-dot,
+        .cursor-outline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            z-index: 9999;
+            pointer-events: none;
+        }
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--brand-accent);
+        }
+        .cursor-outline {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(224, 131, 34, 0.5);
+            transition: width 0.2s, height 0.2s;
+        }
+
+        /* --- FLASHLIGHT BACKGROUND --- */
+        /* This creates the "reveal" effect behind the text */
+        .spotlight {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(
+                600px circle at var(--x, 50%) var(--y, 50%), 
+                rgba(224, 131, 34, 0.15), 
+                transparent 40%
+            );
+            z-index: 1;
+        }
+
+        /* Background Pattern (Visible only under spotlight) */
+        .bg-pattern {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 0;
+            mask-image: radial-gradient(
+                600px circle at var(--x, 50%) var(--y, 50%), 
+                black, 
+                transparent 100%
+            );
+            -webkit-mask-image: radial-gradient(
+                600px circle at var(--x, 50%) var(--y, 50%), 
+                black, 
+                transparent 100%
+            );
+        }
+
+        /* --- MAIN CONTENT --- */
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .error-number {
+            font-family: 'Syne', sans-serif;
+            font-size: 25vw; /* Responsive Huge Text */
+            font-weight: 800;
+            line-height: 0.8;
+            color: transparent;
+            -webkit-text-stroke: 2px rgba(255,255,255,0.1);
+            position: relative;
+            user-select: none;
+        }
+        
+        /* The filled text appears only near mouse */
+        .error-number::before {
+            content: '404';
+            position: absolute;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.2s;
+            background: radial-gradient(
+                300px circle at var(--x-local, 50%) var(--y-local, 50%), 
+                #fff, 
+                transparent 100%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 1;
+        }
+
+        .error-message {
+            font-size: 24px;
+            margin-top: -20px;
+            margin-bottom: 40px;
+            font-weight: 300;
+            color: #aaa;
+            letter-spacing: 1px;
+        }
+
+        .action-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            border: 1px solid var(--brand-accent);
+            color: var(--brand-accent);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1px;
+            border-radius: 50px;
+            transition: 0.3s;
+            background: rgba(0,0,0,0.5);
+            cursor: none; /* Keeps custom cursor */
+        }
+
+        .action-btn:hover {
+            background: var(--brand-accent);
+            color: #000;
+            box-shadow: 0 0 30px rgba(224, 131, 34, 0.4);
+        }
+
+        /* --- BRAND LOGO (Top Left) --- */
+        .brand-mark {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            font-family: 'Syne';
+            font-weight: 800;
+            font-size: 24px;
+            z-index: 20;
+        }
+        .brand-mark span { color: var(--brand-accent); }
+
+        @media (max-width: 768px) {
+            .error-number { font-size: 40vw; }
+            .error-message { font-size: 18px; }
+            * { cursor: auto; } /* Restore cursor on mobile */
+            .cursor-dot, .cursor-outline { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="spotlight" id="spotlight"></div>
+    <div class="bg-pattern" id="pattern"></div>
+
+    <div class="brand-mark">OMNI<span style="color:#E08322;">MAVENS.</span></div>
+
+    <div class="content-wrapper">
+        <div class="error-number" id="errorText">404</div>
+        <h2 class="error-message">You found a leak in the funnel.</h2>
+        <a href="index.html" class="action-btn">Return to Dashboard</a>
+    </div>
+
+    <script>
+        // --- 1. CURSOR MOVEMENT LOGIC ---
+        const cursorDot = document.querySelector("[data-cursor-dot]");
+        const cursorOutline = document.querySelector("[data-cursor-outline]");
+        const spotlight = document.getElementById("spotlight");
+        const pattern = document.getElementById("pattern");
+        const errorText = document.getElementById("errorText");
+
+        window.addEventListener("mousemove", function (e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            // Move Custom Cursor
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            // Animate Outline with slight delay for "organic" feel
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+
+            // Update CSS Variables for Flashlight Effect
+            document.body.style.setProperty("--x", `${posX}px`);
+            document.body.style.setProperty("--y", `${posY}px`);
+
+            // Update Text Fill Effect (Local coordinates relative to text)
+            const rect = errorText.getBoundingClientRect();
+            const localX = posX - rect.left;
+            const localY = posY - rect.top;
+            errorText.style.setProperty("--x-local", `${localX}px`);
+            errorText.style.setProperty("--y-local", `${localY}px`);
+        });
+
+        // --- 2. HOVER EFFECTS ---
+        // Make cursor grow when hovering links
+        const links = document.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                cursorOutline.style.transform = "translate(-50%, -50%) scale(1.5)";
+                cursorOutline.style.backgroundColor = "rgba(224, 131, 34, 0.1)";
+            });
+            link.addEventListener('mouseleave', () => {
+                cursorOutline.style.transform = "translate(-50%, -50%) scale(1)";
+                cursorOutline.style.backgroundColor = "transparent";
+            });
+        });
+    </script>
+</body>
+</html>
