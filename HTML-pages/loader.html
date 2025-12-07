@@ -1,0 +1,165 @@
+<style>
+    /* 1. THE CONTAINER (Fixed on top) */
+    #flashlight-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0b0b0b;
+        z-index: 99999;
+        cursor: none; /* Hide default cursor inside loader */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        
+        /* Mouse position variables */
+        --x: 50%;
+        --y: 50%;
+    }
+
+    /* 2. THE CONTENT LAYER (Visible only under light) */
+    .loader-hidden-layer {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    /* The Grid Pattern Background */
+    .loader-pattern {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-image: 
+            linear-gradient(rgba(224, 131, 34, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(224, 131, 34, 0.1) 1px, transparent 1px);
+        background-size: 50px 50px;
+        opacity: 0.3;
+    }
+
+    /* The Typography */
+    .loader-brand {
+        font-family: 'Syne', sans-serif;
+        font-size: 60px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -1px;
+        z-index: 2;
+    }
+    .loader-brand span { color: #E08322; }
+
+    .loader-status {
+        font-family: 'Manrope', sans-serif;
+        font-size: 14px;
+        color: #E08322;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-top: 15px;
+        font-weight: 700;
+    }
+
+    /* 3. THE DARKNESS (The Mask) */
+    /* This sits ON TOP and hides everything except the mouse circle */
+    .flashlight-mask {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        z-index: 10;
+        background: radial-gradient(
+            circle 150px at var(--x) var(--y),
+            transparent 0%,
+            rgba(11, 11, 11, 0.8) 50%,
+            #0b0b0b 100%
+        );
+        pointer-events: none; /* Let mouse pass through */
+        transition: background 0.1s ease-out; /* Smooth movement */
+    }
+
+    /* 4. THE CURSOR DOT (Custom UI) */
+    .loader-cursor {
+        position: absolute;
+        top: var(--y);
+        left: var(--x);
+        width: 12px;
+        height: 12px;
+        background: #E08322;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        box-shadow: 0 0 20px #E08322;
+        pointer-events: none;
+    }
+
+    /* 5. EXIT ANIMATION (Reveal Site) */
+    body.loaded .flashlight-mask {
+        /* The gradient expands to 200% size, effectively becoming transparent */
+        background: radial-gradient(
+            circle 200vmax at var(--x) var(--y),
+            transparent 0%,
+            transparent 100%
+        );
+        transition: background 1s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    body.loaded #flashlight-loader {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease 0.8s, visibility 0.5s ease 0.8s; /* Fade out container AFTER mask opens */
+    }
+    
+    /* Mobile Fix: Just show centered light */
+    @media (max-width: 768px) {
+        .flashlight-mask {
+             background: radial-gradient(circle 100px at 50% 50%, transparent 0%, #0b0b0b 100%);
+        }
+        .loader-cursor { display: none; }
+    }
+</style>
+
+<div id="flashlight-loader">
+    
+    <div class="loader-hidden-layer">
+        <div class="loader-pattern"></div>
+        <div class="loader-brand">OMNI MAVENS<span>.</span></div>
+        <div class="loader-status">Loading Ecosystem <span id="loadPercent">0%</span></div>
+    </div>
+
+    <div class="flashlight-mask"></div>
+    
+    <div class="loader-cursor"></div>
+</div>
+
+<script>
+    const fLoader = document.getElementById('flashlight-loader');
+    const fPercent = document.getElementById('loadPercent');
+    
+    // 1. Mouse Tracking Logic
+    document.addEventListener('mousemove', (e) => {
+        if (!document.body.classList.contains('loaded')) {
+            fLoader.style.setProperty('--x', e.clientX + 'px');
+            fLoader.style.setProperty('--y', e.clientY + 'px');
+        }
+    });
+
+    // 2. Percentage Simulator (For visual feedback)
+    let progress = 0;
+    const sim = setInterval(() => {
+        progress += Math.floor(Math.random() * 3) + 1;
+        if (progress > 99) progress = 99;
+        fPercent.innerText = progress + "%";
+    }, 50);
+
+    // 3. Finish Load
+    window.addEventListener("load", function() {
+        clearInterval(sim);
+        fPercent.innerText = "100%";
+        
+        // Brief pause to read 100%
+        setTimeout(() => {
+            document.body.classList.add('loaded');
+        }, 500);
+    });
+</script>

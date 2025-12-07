@@ -95,9 +95,9 @@ You don't want "SEO" or "PPC." You want revenue, visibility, and leads. We map o
                         <span class="outcome-text">High-converting landing pages and CRO that lowers Cost Per Lead.</span>
                     </div>
 
-                    <a href="/solutions/lead-generation" class="btn-primary" style="text-align: center;">See Lead Gen Strategy</a>
+                    <NuxtLink :to="{ name: 'lead-generation' }" class="btn-primary" style="text-align: center;">See Lead Gen Strategy</NuxtLink>
                 </div>
-
+                
                 <div class="sol-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="sol-header">
                         <i class="fa-solid fa-chart-line sol-icon"></i>
@@ -114,10 +114,10 @@ You don't want "SEO" or "PPC." You want revenue, visibility, and leads. We map o
                         <span class="outcome-label">The Outcome</span>
                         <span class="outcome-text">Scaled revenue with healthy margins via PPC and Email retention.</span>
                     </div>
-
-                    <a href="/solutions/sales-performance" class="btn-primary" style="text-align: center;">See Revenue Strategy</a>
+                    
+                    <NuxtLink :to="{ name: 'sales-performance' }" class="btn-primary" style="text-align: center;">See Revenue Strategy</NuxtLink>
                 </div>
-
+                
                 <div class="sol-card" data-aos="fade-up">
                     <div class="sol-header">
                         <i class="fa-solid fa-gears sol-icon"></i>
@@ -134,10 +134,10 @@ You don't want "SEO" or "PPC." You want revenue, visibility, and leads. We map o
                         <span class="outcome-label">The Outcome</span>
                         <span class="outcome-text">24/7 Nurture sequences that warm up leads on autopilot.</span>
                     </div>
-
-                    <a href="/solutions/marketing-automation" class="btn-primary" style="text-align: center;">See Automation Strategy</a>
+                    
+                    <NuxtLink :to="{ name: 'marketing-automation' }" class="btn-primary" style="text-align: center;">See Automation Strategy</NuxtLink>
                 </div>
-
+                
                 <div class="sol-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="sol-header">
                         <i class="fa-solid fa-crown sol-icon"></i>
@@ -154,8 +154,8 @@ You don't want "SEO" or "PPC." You want revenue, visibility, and leads. We map o
                         <span class="outcome-label">The Outcome</span>
                         <span class="outcome-text">A premium visual identity and thought leadership content.</span>
                     </div>
-
-                    <a href="/solutions/brand-awareness" class="btn-primary" style="text-align: center;">See Brand Strategy</a>
+                    
+                    <NuxtLink :to="{ name: 'brand-awareness' }" class="btn-primary" style="text-align: center;">See Brand Strategy</NuxtLink>
                 </div>
 
             </div>
@@ -211,6 +211,7 @@ You don't want "SEO" or "PPC." You want revenue, visibility, and leads. We map o
 <script setup lang="ts">
     definePageMeta({
         title: 'Solutions Page',
+        name:'solutions'
     })
 
     useSeoMeta({

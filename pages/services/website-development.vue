@@ -240,7 +240,7 @@
         </div>
     </section>
 
-
+    <ContactFormSection />
 
 </template>
 
