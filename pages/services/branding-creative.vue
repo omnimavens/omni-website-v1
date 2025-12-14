@@ -147,7 +147,7 @@
         <div class="container">
             <div style="text-align: center; margin-bottom: 80px;" data-aos="fade-up">
                 <span class="section-subtitle">Visual Impact</span>
-                <h2 style="font-size: 40px;">Design In Action</h2>
+                <h2>Design In Action</h2>
             </div>
 
             <div class="sc-grid">

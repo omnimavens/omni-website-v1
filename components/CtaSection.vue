@@ -12,7 +12,7 @@
       </p>
 
       <NuxtLink
-        to="/contact"
+        to="/contact-us"
         class="btn-primary inline-block px-12 py-4 text-lg"
       >
         {{ buttonText }}

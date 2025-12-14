@@ -147,12 +147,12 @@ Expert guides, data analysis, and strategies on Amazon FBA, SEO, PPC, and Digita
 
             </div>
 
-            <div class="pagination">
+            <!-- <div class="pagination">
                 <a href="#" class="page-num active">1</a>
                 <a href="#" class="page-num">2</a>
                 <a href="#" class="page-num">3</a>
                 <a href="#" class="page-num"><i class="fa-solid fa-chevron-right"></i></a>
-            </div>
+            </div> -->
 
         </div>
     </section>

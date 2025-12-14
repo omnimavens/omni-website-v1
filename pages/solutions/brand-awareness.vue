@@ -38,7 +38,7 @@ Trust is the ultimate currency. We elevate your visual identity, content, and th
         <div class="container">
             <div style="text-align: center;">
                 <span class="section-subtitle">Our Framework</span>
-                <h2 style="font-size: 40px;">The Authority Engine</h2>
+                <h2>The Authority Engine</h2>
             </div>
             <div class="strategy-cards">
                 

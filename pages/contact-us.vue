@@ -15,7 +15,7 @@ Whether you're looking for growth, strategy, or clarity—our experts are here t
 
 <script setup lang="ts">
     definePageMeta({
-        title: 'Home Page',
+        title: 'Connect with us Now - The Digital Marketing Agency',
         name: 'contact'
     })
 
