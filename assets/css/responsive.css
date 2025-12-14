@@ -1,10 +1,15 @@
-@media (max-width: 1279px) {
-    .logo img{width: 200px;}
+@media screen and (max-width: 1279px) {
+    .logo img{width: 240px;}
+    .hero-section {padding-top: 180px;padding-bottom: 190px;}
+    .hero-sub {margin-bottom: 35px;font-size: 20px;}
+    .nav-links {gap: 25px;}
+    .btn-primary {padding: 12px 25px;}
+    .service-grid {grid-template-columns: repeat(2, 1fr);}
 }
  
- @media (max-width: 1024px) {
+ @media screen and (max-width: 1023px) {
     .hero-h1 { font-size: 60px; }
-    .sol-grid-home { grid-template-columns: 1fr 1fr; }
+    .sol-grid-home { grid-template-columns: 1fr; }
     .about-flex { flex-direction: column; }
 
     .services-grid, .intro-grid, .process-steps { grid-template-columns: 1fr; }
@@ -15,11 +20,12 @@
 
     header {padding: 20px 0;}
     .sol-card-home {padding: 30px;}
-    .sol-grid-home {margin-top: 25px;}
+    .sol-grid-home {margin-top: 25px;gap: 20px;}
     .sol-h3 {font-size: 24px;margin-bottom: 10px;}
+    .common-padding {padding: 70px 0;}
 
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .nav-links, .desktop-btn { display: none !important; }
     .hamburger { display: block; }
     .footer-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -28,5 +34,17 @@
     .hamburger { display: block; }
     .footer-grid { grid-template-columns: 1fr; gap: 40px; }
     .hero-h1 { font-size: 40px; }
-    .service-grid { grid-template-columns: 1fr; }
+    .service-grid , .uni-form-card .two-col { grid-template-columns: 1fr; }
+    .hero-section {padding-top: 140px;}
+    .uni-grid {gap: 30px;}
+    .uni-form-card {padding: 30px 25px;}
+    footer .logo img{margin: 0 auto;text-align: center;width: 240px;}
+    footer .social-links div, footer .contact-info li {justify-content: center;}
+    footer .main-footer {text-align: center;}
+}
+
+@media screen and (max-width: 639px) {
+  .hero-section {padding-top: 100px;padding-bottom: 175px;}
+  .hero-sub {font-size: 18px;}
+  h2 {font-size: 35px;line-height: 40px;}
 }

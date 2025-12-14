@@ -121,7 +121,7 @@
                             <li>Email Newsletter Copy</li>
                             <li>Distribution Strategy</li>
                         </ul>
-                        <a href="contact.html" class="btn-primary" style="width: 100%; margin-top: 10px;">Get Content Plan</a>
+                        <NuxtLink :to="{ name: 'contact'}" class="btn-primary" style="width: 100%; margin-top: 10px;">Get Content Plan</NuxtLink>
                     </div>
 
                     <div class="sidebar-card" style="border-color: #333;" data-aos="fade-left" data-aos-delay="100">
@@ -147,7 +147,7 @@
         <div class="container">
             <div style="text-align: center; margin-bottom: 80px;" data-aos="fade-up">
                 <span class="section-subtitle">Real Results</span>
-                <h2 style="font-size: 40px;">Content That Converts</h2>
+                <h2>Content That Converts</h2>
             </div>
 
             <div class="sc-grid">

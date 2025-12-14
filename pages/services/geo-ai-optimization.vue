@@ -94,7 +94,7 @@
                                 </div>
                             </div>
                             <div>
-                                <h4 style="margin-bottom: 20px;">Next Steps</h4>
+                                <h4 style="margin-bottom: 20px;">Other Services</h4>
                                 <a href="/solutions/visibility" class="related-link">
                                     <div class="rl-title">Get Found Online <i class="fa-solid fa-arrow-right"></i></div>
                                     <p class="rl-desc">Combine GEO with traditional SEO.</p>
@@ -119,7 +119,7 @@
                             <li><i class="fa-solid fa-check"></i> SGE Content Audit</li>
                             <li><i class="fa-solid fa-check"></i> Featured Snippet Capture</li>
                         </ul>
-                        <a href="contact.html" class="btn-primary" style="width: 100%; margin-top: 10px;">Audit My Brand</a>
+                        <NuxtLink :to="{ name: 'contact'}" class="btn-primary" style="width: 100%; margin-top: 10px;">Audit My Brand</NuxtLink>
                     </div>
 
                     <div class="sidebar-card" style="border-color: #333;" data-aos="fade-left" data-aos-delay="100">
@@ -145,7 +145,7 @@
         <div class="container">
             <div style="text-align: center; margin-bottom: 80px;" data-aos="fade-up">
                 <span class="section-subtitle">AI Success Stories</span>
-                <h2 style="font-size: 40px;">GEO In Action</h2>
+                <h2>GEO In Action</h2>
             </div>
 
             <div class="cs-row">

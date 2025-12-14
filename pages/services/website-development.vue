@@ -96,7 +96,7 @@
                             <li><i class="fa-solid fa-check text-accent"></i>  SEO Structure Setup</li>
                             <li><i class="fa-solid fa-check text-accent"></i>  Payment Gateway Integration</li>
                         </ul>
-                        <a href="contact.html" class="btn-primary" style="width: 100%; margin-top: 10px;">Get a Quote</a>
+                        <NuxtLink :to="{ name: 'contact'}" class="btn-primary" style="width: 100%; margin-top: 10px;">Get a Quote</NuxtLink>
                     </div>
 
                     <div class="sidebar-card" style="border-color: #333;" data-aos="fade-left" data-aos-delay="100">
@@ -171,7 +171,7 @@
         <div class="container">
             <div style="text-align: center; margin-bottom: 80px;" data-aos="fade-up">
                 <span class="section-subtitle">Real Results</span>
-                <h2 style="font-size: 40px;">Engineering Success</h2>
+                <h2>Engineering Success</h2>
             </div>
 
             <div class="sc-grid">

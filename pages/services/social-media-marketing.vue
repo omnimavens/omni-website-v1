@@ -94,7 +94,7 @@
                             <li>Community Engagement</li>
                             <li>Monthly Performance Report</li>
                         </ul>
-                        <a href="contact.html" class="btn-primary" style="width: 100%; margin-top: 10px;">Get Social Audit</a>
+                        <NuxtLink :to="{ name: 'contact'}" class="btn-primary" style="width: 100%; margin-top: 10px;">Get Social Audit</NuxtLink>
                     </div>
 
                     <div class="sidebar-card" style="border-color: #333;" data-aos="fade-left" data-aos-delay="100">
@@ -168,7 +168,7 @@
                     </div>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 20px;">Next Steps</h4>
+                    <h4 style="margin-bottom: 20px;">Other Services</h4>
                     <a href="/services/branding-creative" class="related-link">
                         <div class="rl-title">Brand Identity <i class="fa-solid fa-arrow-right"></i></div>
                         <p class="rl-desc">Ensure your visuals are premium.</p>
@@ -186,7 +186,7 @@
         <div class="container">
             <div style="text-align: center; margin-bottom: 80px;" data-aos="fade-up">
                 <span class="section-subtitle">Real Results</span>
-                <h2 style="font-size: 40px;">Social Growth In Action</h2>
+                <h2>Social Growth In Action</h2>
             </div>
 
             <div class="sc-grid">

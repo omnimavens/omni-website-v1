@@ -1,5 +1,5 @@
 <template>
-  <section class="uni-cta-section">
+  <section class="uni-cta-section common-padding">
         <div class="container">
             <div class="uni-grid">
                 
@@ -35,15 +35,22 @@
                         <li>
                             <div class="uni-bullet"></div>
                             <div class="uni-text-wrap">
-                                <h4><a href="tel:9274824894" class="hover:text-white">+91 92748 24894</a></h4>
+                                <h4><a href="tel:9274824894">+91 92748 24894</a></h4>
                                 <p>Contact us</p>
                             </div>
                         </li>
                         <li>
                             <div class="uni-bullet"></div>
                             <div class="uni-text-wrap">
-                                <h4 class="accent"><a href="mailto:info@omnimavens.com" class="hover:text-white">info@omnimavens.com</a></h4>
+                                <h4 class="accent"><a href="mailto:info@omnimavens.com">info@omnimavens.com</a></h4>
                                 <p>Email us at</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uni-bullet"></div>
+                            <div class="uni-text-wrap">
+                                <h4 class="accent">Ahmedabad, India</h4>
+                                <p>Location</p>
                             </div>
                         </li>
                     </ul>
@@ -67,7 +74,7 @@
 
 
                     <!-- Name + Email -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                    <div class="two-col">
                         <div>
                         <label class="uni-label">Name <span style="color:#E08322">*</span></label>
                         <input 

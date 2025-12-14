@@ -34,7 +34,7 @@ You don't want "SEO" or "PPC." You want revenue, visibility, and leads. We map o
         <div class="container">
             <div style="text-align: center; margin-bottom: 60px;">
                 <span class="section-subtitle">Find Your Solution</span>
-                <h2 style="font-size: 40px;">What is your primary goal?</h2>
+                <h2>What is your primary goal?</h2>
             </div>
 
             <div class="solutions-grid">

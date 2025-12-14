@@ -38,7 +38,7 @@
         <div class="container">
             <div style="text-align: center;">
                 <span class="section-subtitle">Our Framework</span>
-                <h2 style="font-size: 40px;">The Revenue Flywheel</h2>
+                <h2>The Revenue Flywheel</h2>
             </div>
             <div class="strategy-cards">
                 

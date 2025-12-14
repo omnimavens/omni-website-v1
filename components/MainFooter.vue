@@ -34,13 +34,13 @@
         <div class="social-links">
           <h4 class="text-lg mb-5 font-semibold">Socials</h4>
           <div class="d-flex text-white">
-            <a href="https://www.linkedin.com/company/omni-mavens/" target="_blank" class="hover:text-accent">
+            <a href="https://www.linkedin.com/company/omni-mavens/" target="_blank" title="" aria-label="Omni Mavens on LinkedIn">
               <i class="fa-brands fa-linkedin fa-lg"></i>
             </a>
-            <a href="https://www.instagram.com/omnimavens/" target="_blank" class="hover:text-accent">
+            <a href="https://www.instagram.com/omnimavens/" target="_blank" title="" aria-label="Omni Mavens on Instagram">
               <i class="fa-brands fa-instagram fa-lg"></i>
             </a>
-            <a href="https://www.facebook.com/people/Omni-Mavens/61578739193718/" target="_blank" class="hover:text-accent">
+            <a href="https://www.facebook.com/people/Omni-Mavens/61578739193718/" target="_blank" title="" aria-label="Omni Mavens on Facebook">
               <i class="fa-brands fa-facebook fa-lg"></i>
             </a>
           </div>
@@ -52,11 +52,15 @@
             <ul class="space-y-3 text-gray-400">
             <li class="flex items-center gap-2">
               <i class="fa-solid fa-phone fa-sm"></i>
-              <a href="tel:9274824894" class="hover:text-white">+91 92748 24894</a>
+              <a href="tel:9274824894">+91 92748 24894</a>
             </li>
             <li class="flex items-center gap-2">
               <i class="fa-solid fa-envelope fa-sm"></i>
-              <a href="mailto:info@omnimavens.com" class="hover:text-white">info@omnimavens.com</a>
+              <a href="mailto:info@omnimavens.com">info@omnimavens.com</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot fa-sm"></i>
+              <a href="">Ahmedabad, India</a>
             </li>
             </ul>
         </div>

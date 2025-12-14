@@ -95,7 +95,7 @@
                                 </div>
                             </div>
                             <div>
-                                <h4 style="margin-bottom: 20px;">Next Steps</h4>
+                                <h4 style="margin-bottom: 20px;">Other Services</h4>
                                 <a href="/solutions/sales-performance" class="related-link">
                                     <div class="rl-title">Improve Sales <i class="fa-solid fa-arrow-right"></i></div>
                                     <p class="rl-desc">Focus on Revenue Acceleration.</p>
@@ -120,7 +120,7 @@
                             <li><i class="fa-solid fa-check"></i> Weekly Bid Adjustments</li>
                             <li><i class="fa-solid fa-check"></i> Live ROAS Dashboard</li>
                         </ul>
-                        <a href="contact.html" class="btn-primary" style="width: 100%; margin-top: 10px;">Get Free PPC Audit</a>
+                        <NuxtLink :to="{ name: 'contact'}" class="btn-primary" style="width: 100%; margin-top: 10px;">Get Free PPC Audit</NuxtLink>
                     </div>
 
                     <div class="sidebar-card" style="border-color: #333;" data-aos="fade-left" data-aos-delay="100">
