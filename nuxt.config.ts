@@ -8,7 +8,8 @@ export default defineNuxtConfig({
 		'@nuxt/hints',
 		'@nuxt/image',
 		'@nuxt/scripts',
-		'@nuxt/ui'
+		'@nuxt/ui',
+		'@nuxt/scripts'
 	],
 
 	css: [
@@ -17,6 +18,13 @@ export default defineNuxtConfig({
 		"@fortawesome/fontawesome-free/css/all.css"
 	],
 
+	scripts: {
+		registry: {
+		googleTagManager: {
+			id: 'GTM-PWDN88D5'
+		}
+		}
+	},
 	
 	/*
 		❗ Please read the docs before updating runtimeConfig
@@ -29,10 +37,10 @@ export default defineNuxtConfig({
 
 		// Public keys that are exposed to the client.
 		public: {
-		appName: `${process.env.APP_NAME} admin app`,
-		appPanel: `${process.env.APP_NAME} admin panel`,
-		apiBaseUrl: process.env.NUXT_PUBLIC_API_BASE_URL,
-		// mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
+			appName: `${process.env.APP_NAME} admin app`,
+			appPanel: `${process.env.APP_NAME} admin panel`,
+			apiBaseUrl: process.env.NUXT_PUBLIC_API_BASE_URL,
+			// mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
 		},
 	},
 })
