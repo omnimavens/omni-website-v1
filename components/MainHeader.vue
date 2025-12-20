@@ -48,7 +48,7 @@
             <li><NuxtLink to="/services" @click="toggleMenu">Services</NuxtLink></li>
             <li><NuxtLink to="/solutions" @click="toggleMenu">Solutions</NuxtLink></li>
             <li><NuxtLink to="/blogs" @click="toggleMenu">Blogs</NuxtLink></li>
-            <li><NuxtLink to="/contact" @click="toggleMenu">Contact</NuxtLink></li>
+            <li><NuxtLink to="/contact-us" @click="toggleMenu">Contact</NuxtLink></li>
             <!-- <li><i class="fa-solid fa-envelope fa-xl text-accent "></i> <a href="mailto:info@mavens.com" class="">info@mavens.com</a></li>
             <li><i class="fa-solid fa-phone fa-xl text-accent "></i> <a href="tel:++91 92748 24894">+91 92748 24894</a></li> -->
           </ul>

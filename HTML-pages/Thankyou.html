@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex"> <title>Thank You | Omni Mavens</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* --- CORE THEME --- */
+        :root {
+            --brand-accent: #E08322; /* ORANGE */
+            --dark-bg: #0b0b0b;
+            --section-bg: #111111;
+            --card-bg: #161616;
+            --border-color: #2a2a2a;
+            --text-white: #ffffff;
+            --text-gray: #a1a1a1;
+        }
+
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Manrope', sans-serif; }
+        body { background-color: var(--dark-bg); color: var(--text-white); overflow-x: hidden; line-height: 1.7; min-height: 100vh; display: flex; flex-direction: column; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        .container { max-width: 1320px; margin: 0 auto; padding: 0 20px; }
+
+        /* Typography */
+        h1, h2, h3 { font-family: 'Syne', sans-serif; font-weight: 700; color: #fff; }
+        .text-accent { color: var(--brand-accent); }
+
+        /* HEADER */
+        header { padding: 25px 0; position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.05); background: #0b0b0b; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 800; font-family: 'Syne'; letter-spacing: -1px; color: #fff; }
+        
+        /* HERO SECTION */
+        .thank-you-hero {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 180px 0 100px;
+            background: radial-gradient(circle at 50% 50%, #1a1a1a, #0b0b0b);
+            text-align: center;
+        }
+        
+        /* STATUS ICON */
+        .status-icon-wrap {
+            width: 80px; height: 80px;
+            background: rgba(224, 131, 34, 0.1);
+            border: 1px solid var(--brand-accent);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 30px;
+            position: relative;
+        }
+        .status-icon-wrap::after {
+            content: ''; position: absolute; top: -5px; left: -5px; right: -5px; bottom: -5px;
+            border-radius: 50%; border: 1px solid var(--brand-accent);
+            opacity: 0.5; animation: pulse-ring 2s infinite;
+        }
+        .check-icon { font-size: 30px; color: var(--brand-accent); }
+
+        @keyframes pulse-ring {
+            0% { transform: scale(1); opacity: 0.5; }
+            100% { transform: scale(1.5); opacity: 0; }
+        }
+
+        .hero-title { font-size: 70px; line-height: 1.1; margin-bottom: 20px; text-transform: uppercase; }
+        .hero-desc { max-width: 600px; margin: 0 auto 40px; color: var(--text-gray); font-size: 18px; }
+
+        /* NEXT STEPS GRID */
+        .next-steps-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+            max-width: 900px; margin: 60px auto 0; text-align: left;
+        }
+        .step-card {
+            background: #161616; padding: 30px; border-radius: 12px; border: 1px solid #222; transition: 0.3s;
+        }
+        .step-card:hover { border-color: var(--brand-accent); transform: translateY(-5px); }
+        .step-icon { color: var(--brand-accent); font-size: 20px; margin-bottom: 15px; }
+        .step-title { font-size: 16px; margin-bottom: 10px; color: #fff; font-family: 'Syne'; }
+        .step-text { font-size: 13px; color: #888; line-height: 1.6; }
+
+        .btn-primary { 
+            background-color: var(--brand-accent); color: #000; padding: 12px 30px; border-radius: 50px; 
+            font-weight: 700; font-size: 13px; text-transform: uppercase; border: 1px solid var(--brand-accent); 
+            display: inline-flex; align-items: center; justify-content: center; gap: 10px; transition: 0.3s; cursor: pointer; margin-top: 30px;
+        }
+        .btn-primary:hover { background: transparent; color: var(--brand-accent); }
+
+        /* FOOTER */
+        footer { padding: 40px 0; background: #050505; border-top: 1px solid #222; text-align: center; font-size: 13px; color: #555; }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 50px; }
+            .next-steps-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">OMNIMAVENS<span class="text-accent">.</span></a>
+                <a href="index.html" style="font-size: 12px; font-weight: 700; text-transform: uppercase; color: #888;">Back to Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="thank-you-hero">
+        <div class="container">
+            
+            <div class="status-icon-wrap" data-aos="zoom-in">
+                <i class="fa-solid fa-check check-icon"></i>
+            </div>
+
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                THANK <span class="text-accent">YOU</span>
+            </h1>
+            
+            <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+                Your submission has been received successfully. Our team is reviewing your details and will be in touch within 24 hours.
+            </p>
+
+            <a href="index.html" class="btn-primary" data-aos="fade-up" data-aos-delay="300">
+                Return to Home
+            </a>
+
+            <div class="next-steps-grid" data-aos="fade-up" data-aos-delay="400">
+                
+                <a href="insights.html" class="step-card">
+                    <div class="step-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h4 class="step-title">Read Our Insights</h4>
+                    <p class="step-text">While you wait, discover our latest strategies on AI, SEO, and Paid Media growth.</p>
+                </a>
+
+                <a href="case-studies.html" class="step-card">
+                    <div class="step-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h4 class="step-title">View Case Studies</h4>
+                    <p class="step-text">See exactly how we scaled other brands from 6 to 7 figures using our ecosystem.</p>
+                </a>
+
+                <a href="https://www.instagram.com/omnimavens/" target="_blank" class="step-card">
+                    <div class="step-icon"><i class="fa-brands fa-instagram"></i></div>
+                    <h4 class="step-title">Join the Community</h4>
+                    <p class="step-text">Follow us on Instagram for daily tips and behind-the-scenes strategy.</p>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            &copy; 2025 Omni Mavens. Built for Growth.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50, duration: 800 });
+    </script>
+</body>
+</html>

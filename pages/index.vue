@@ -42,63 +42,61 @@
             </div>
             
             <div class="service-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                <NuxtLink :to="{ name: 'seo-services' }" class="service-card" data-aos="fade-up" data-aos-delay="0">
                     <i class="fa-solid fa-magnifying-glass s-icon"></i>
                     <h3 class="s-title">SEO Services</h3>
                     <p class="s-desc">Technical, Local, and On-Page SEO to dominate organic search rankings.</p>
-                    <NuxtLink :to="{ name: 'seo-services' }" class="s-link">View Details <i class="fa-solid fa-arrow-right"></i></NuxtLink>
-                    
-                </div>
+                    <NuxtLink :to="{ name: 'seo-services' }" class="s-link">View Details <i class="fa-solid fa-arrow-right"></i></NuxtLink>                    
+                </NuxtLink>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+                <NuxtLink :to="{ name: 'geo-ai-optimization' }" class="service-card" data-aos="fade-up" data-aos-delay="50">
                     <i class="fa-solid fa-robot s-icon"></i>
                     <h3 class="s-title">GEO & AI Search</h3>
                     <p class="s-desc">Future-proof your brand for Google SGE, ChatGPT, and Perplexity rankings.</p>
                     <NuxtLink :to="{ name: 'geo-ai-optimization' }" class="s-link">View Details <i class="fa-solid fa-arrow-right"></i></NuxtLink>
-                    
-                </div>
+                </NuxtLink>
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <NuxtLink :to="{ name: 'ppc-management' }" class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <i class="fa-solid fa-bullseye s-icon"></i>
                     <h3 class="s-title">PPC Management</h3>
                     <p class="s-desc">High-ROAS Google Ads and Bing campaigns engineered for conversion.</p>
                     <NuxtLink :to="{ name: 'ppc-management' }" class="s-link">View Details <i class="fa-solid fa-arrow-right"></i></NuxtLink>
-                </div>
+                </NuxtLink>
                 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                <NuxtLink :to="{ name: 'social-media-marketing' }" class="service-card" data-aos="fade-up" data-aos-delay="150">
                     <i class="fa-solid fa-hashtag s-icon"></i>
                     <h3 class="s-title">Social Media</h3>
                     <p class="s-desc">Paid Social (Meta/TikTok) and organic growth strategies that build community.</p>
                     <NuxtLink :to="{ name: 'social-media-marketing' }" class="s-link">View Details <i class="fa-solid fa-arrow-right"></i></NuxtLink>
-                </div>
+                </NuxtLink>
                 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <NuxtLink :to="{ name: 'services' }" class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <i class="fa-solid fa-envelope s-icon"></i>
                     <h3 class="s-title">Email Marketing</h3>
                     <p class="s-desc">Automated flows and drip campaigns to increase Customer Lifetime Value (LTV).</p>
                     <NuxtLink :to="{ name: 'services' }" class="s-link">View Details <i class="fa-solid fa-arrow-right"></i></NuxtLink>
-                </div>
+                </NuxtLink>
                 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                <NuxtLink :to="{ name: 'content-marketing' }" class="service-card" data-aos="fade-up" data-aos-delay="250">
                     <i class="fa-solid fa-pen-nib s-icon"></i>
                     <h3 class="s-title">Content Marketing</h3>
                     <p class="s-desc">Blog writing, copywriting, and content strategy that drives topical authority.</p>
                     <NuxtLink :to="{ name: 'content-marketing' }" class="s-link">View Details <i class="fa-solid fa-arrow-right"></i></NuxtLink>
-                </div>
+                </NuxtLink>
                 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <NuxtLink :to="{ name: 'website-development' }" class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <i class="fa-solid fa-code s-icon"></i>
                     <h3 class="s-title">Web Development</h3>
                     <p class="s-desc">Custom Shopify and WordPress builds optimized for speed and conversion.</p>
                     <NuxtLink :to="{ name: 'website-development' }" class="s-link">View Details <i class="fa-solid fa-arrow-right"></i></NuxtLink>
-                </div>
+                </NuxtLink>
                 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+                <NuxtLink :to="{ name: 'branding-creative' }" class="service-card" data-aos="fade-up" data-aos-delay="350">
                     <i class="fa-solid fa-layer-group s-icon"></i>
                     <h3 class="s-title">Branding & Creative</h3>
                     <p class="s-desc">Logo design, visual identity systems, and creative direction.</p>
                     <NuxtLink :to="{ name: 'branding-creative' }" class="s-link">View Details <i class="fa-solid fa-arrow-right"></i></NuxtLink>
-                </div>
+                </NuxtLink>
             </div>
         </div>
     </section>

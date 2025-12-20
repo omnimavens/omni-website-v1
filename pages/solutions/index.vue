@@ -10,7 +10,7 @@ You don't want "SEO" or "PPC." You want revenue, visibility, and leads. We map o
         </div>
     </section>
 
-    <section class="connection-section">
+    <section class="connection-section common-padding">
         <div class="container">
             <div class="conn-grid">
                 <div data-aos="fade-right">
@@ -162,10 +162,10 @@ You don't want "SEO" or "PPC." You want revenue, visibility, and leads. We map o
         </div>
     </section>
 
-    <section class="stage-section">
+    <section class="stage-section common-padding">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 50px;">
-                <h2 style="font-size: 36px;">Solutions by Growth Stage</h2>
+            <div style="text-align: center;">
+                <h2 style="">Solutions by Growth Stage</h2>
             </div>
             <div class="stage-grid">
                 

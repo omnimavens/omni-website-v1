@@ -1,5 +1,5 @@
 <template>
-    <section class="about-hero">
+    <section class="about-hero inner-banner-padding">
         <div class="container">
             <h1 class="hero-title" data-aos="fade-up">
                 We Are <br> <span class="text-accent">OMNI MAVENS</span>
@@ -10,7 +10,7 @@
         </div>
     </section>
 
-    <section class="connection-section">
+    <section class="connection-section common-padding">
         <div class="container">
             <div class="conn-grid">
                 <div data-aos="fade-right">
@@ -34,7 +34,7 @@
         </div>
     </section>
 
-      <div class="stats-bar">
+      <div class="stats-bar common-padding">
         <div class="container">
             <div class="stats-grid">
                 <div data-aos="fade-up" data-aos-delay="0">

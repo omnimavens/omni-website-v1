@@ -1,5 +1,5 @@
 <template>
-  <section class="cta-section py-20 text-center bg-black text-white">
+  <section class="cta-section py-20 text-center bg-black text-white common-padding">
     <div class="container mx-auto px-4" data-aos="zoom-in">
 
       <h2 class="text-4xl md:text-5xl font-bold uppercase mb-5">
