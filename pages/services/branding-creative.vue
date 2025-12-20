@@ -13,7 +13,7 @@
         </div>
     </section>
 
-    <section class="content-section">
+    <section class="content-section common-padding">
         <div class="container">
             <div class="layout-grid">
                 
@@ -121,7 +121,7 @@
                             <li> <i class="fa-solid fa-check text-accent"></i> Packaging Design</li>
                             <li> <i class="fa-solid fa-check text-accent"></i> Business Card & Stationery</li>
                         </ul>
-                        <a href="contact.html" class="btn-primary" style="width: 100%; margin-top: 10px;">Get Branding Quote</a>
+                        <NuxtLink to="/contact-us" class="btn-primary" style="width: 100%; margin-top: 10px;">Get Branding Quote</NuxtLink>
                     </div>
 
                     <div class="sidebar-card" style="border-color: #333;" data-aos="fade-left" data-aos-delay="100">

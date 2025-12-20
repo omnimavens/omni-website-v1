@@ -184,170 +184,114 @@
 </template>
 
 <script setup>
+import { reactive } from "vue";
+import { useRouter } from "vue-router";
+const router = useRouter();
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxij1am_jfuBlUzkLYDQ1CoXffm4ztUvYq01jbywI4IIPCCTYzN6reDUqjwrKfaqN9b/exec"; 
 
-    import { useCommonLibrary } from '@/composables/useCommonLibrary';
-    
-const { $api } = useCommonLibrary()
 const state = reactive({
   form: {
-    url: '',
-    name: '',
-    email: '',
-    country_code: '+91',
-    phone: '',
-    goal: '',
-    budget: '',
-    message: '',
+    url: "",
+    name: "",
+    email: "",
+    country_code: "+91",
+    phone: "",
+    goal: "",
+    budget: "",
+    message: "",
   },
   errors: {},
-  captcha: { num1: 0, num2: 0, operator: '' },
+  captcha: { num1: 0, num2: 0, operator: "" },
   showModal: false,
-})
+});
 
 const methods = {
 
-    acceptCookies: () => {
-        document.cookie = "cookiesAccepted=true; max-age=" + 60 * 60 * 24 * 15;
-        state.showCookiePopup = false;
-    },
+  handleSubmit: async () => {
+  let isValid = true;
 
-    rejectCookies: () => {
-        document.cookie = "cookiesRejected=true; max-age=" + 60 * 60 * 24 * 15;
-        state.showCookiePopup = false;
-    },
+  if (!state.form.name.trim()) {
+    state.errors.name = "Enter your Name";
+    isValid = false;
+  }
 
-    handleSubmit: async () => {
-        let isValid = true;
+  if (!state.form.email.trim()) {
+    state.errors.email = "Enter your email";
+    isValid = false;
+  }
 
-        // --------------------
-        //  FORM VALIDATION
-        // --------------------
+  if (!state.form.phone.trim()) {
+    state.errors.phone = "Enter your phone number";
+    isValid = false;
+  }
 
-        // Name
-        if (!state.form.name.trim()) {
-            state.errors.name = "Enter your Name";
-            isValid = false;
-        }
+  if (!state.form.url.trim()) {
+    state.errors.url = "Enter your Website URL";
+    isValid = false;
+  }
 
-        // Email
-        if (!state.form.email.trim()) {
-            state.errors.email = "Enter your email";
-            isValid = false;
-        }
+  if (!state.form.goal) {
+    state.errors.goal = "Select your primary goal";
+    isValid = false;
+  }
 
-        // Message
-        if (!state.form.message.trim()) {
-            state.errors.message = "Enter your message";
-            isValid = false;
-        }
+  if (!state.form.message.trim()) {
+    state.errors.message = "Enter your message";
+    isValid = false;
+  }
 
-        // Phone
-        if (!state.form.phone.trim()) {
-            state.errors.phone = "Enter your phone number";
-            isValid = false;
-        }
+  if (!isValid) return;
 
-        // Website URL (basic validation)
-        if (!state.form.url.trim()) {
-            state.errors.url = "Enter your Website URL";
-            isValid = false;
-        }
+  methods.clearErrors();
 
-        // Primary Goal
-        if (!state.form.goal) {
-            state.errors.goal = "Select your primary goal";
-            isValid = false;
-        }
+  try {
+    await fetch(GOOGLE_SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors", //  REQUIRED
+      body: JSON.stringify({
+        website: state.form.url,
+        name: state.form.name,
+        email: state.form.email,
+        phone: `${state.form.country_code} ${state.form.phone}`,
+        goal: state.form.goal,
+        budget: state.form.budget,
+        message: state.form.message,
+      }),
+    });
 
+    //  DO NOT READ RESPONSE
+    //  ASSUME SUCCESS
 
-        if (!isValid) return;
+    Object.assign(state.form, {
+      url: "",
+      name: "",
+      email: "",
+      phone: "",
+      country_code: "+91",
+      goal: "",
+      budget: "",
+      message: "",
+    });
 
-        methods.clearErrors();
-        //showLoader();
+    router.push("/thank-you");
 
-        try {
-            // --------------------
-            //  PREPARE FORM DATA
-            // --------------------
-            const formData = new FormData();
-            formData.append("url", state.form.url);
-            formData.append("name", state.form.name);
-            formData.append("email", state.form.email);
-            formData.append("phone", state.form.phone);
-            formData.append("country_code", state.form.country_code);
-            formData.append("goal", state.form.goal);
-            formData.append("budget", state.form.budget);
-            formData.append("message", state.form.message);
+  } catch (error) {
+    console.error(error);
+    alert("Something went wrong. Please try again.");
+  }
+},
 
-            // --------------------
-            //  API REQUEST
-            // --------------------
-            await $api.post("/api/v1/frontend/contact", formData);
+  clearErrors: () => {
+    state.errors = {
+      name: "",
+      email: "",
+      message: "",
+      phone: "",
+      url: "",
+      goal: "",
+      captcha: "",
+    };
+  },
 
-            //hideLoader();
-
-            // --------------------
-            //  RESET FIELDS
-            // --------------------
-            Object.assign(state.form, {
-                url: "",
-                name: "",
-                email: "",
-                phone: "",
-                country_code: "+91",
-                goal: "",
-                budget: "",
-                message: "",
-            });
-
-            // Refresh captcha
-            methods.generateCaptcha();
-
-            // Show success modal
-            state.showModal = true;
-
-        } catch (error) {
-            //hideLoader();
-            console.log(error);
-
-            const message =
-                error.response?.data?.message || "Something went wrong, please try again.";
-           // showToast("error", message);
-        }
-    },
-
-    clearErrors: () => {
-        state.errors = {
-            name: "",
-            email: "",
-            message: "",
-            phone: "",
-            url: "",
-            goal: "",
-            captcha: "",
-        };
-    },
-
-    generateCaptcha: () => {
-        const operators = ["+", "-", "*"];
-        const operator = operators[Math.floor(Math.random() * operators.length)];
-
-        let num1 = Math.floor(Math.random() * 10) + 1;
-        let num2 = Math.floor(Math.random() * 10) + 1;
-
-        // Ensure positive subtraction
-        if (operator === "-" && num2 > num1) {
-            [num1, num2] = [num2, num1];
-        }
-
-        state.captcha.num1 = num1;
-        state.captcha.num2 = num2;
-        state.captcha.operator = operator;
-
-        // Reset captcha input
-        state.errors.captcha = "";
-    }
 };
-
 </script>
-

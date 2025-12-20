@@ -13,7 +13,7 @@
         </div>
     </section>
 
-    <section class="connection-section">
+    <section class="connection-section common-padding">
         <div class="container">
             <div class="conn-grid ">
                 <div data-aos="fade-left">
@@ -34,7 +34,7 @@
         </div>
     </section>
 
-    <section class="strategy-section">
+    <section class="strategy-section common-padding">
         <div class="container">
             <div style="text-align: center;">
                 <span class="section-subtitle">Our Framework</span>
@@ -71,12 +71,12 @@
     </section>
 
     
-    <section class="mix-section">
+    <section class="mix-section common-padding">
         <div class="container">
             <div class="mix-grid">
                 <div data-aos="fade-right">
                     <span class="section-subtitle">The Stack</span>
-                    <h2 style="font-size: 36px; margin-bottom: 20px;">Demand Generation Engine</h2>
+                    <h2 style=" margin-bottom: 20px;">Demand Generation Engine</h2>
                     <p style="color: #aaa; margin-bottom: 30px;">
                         We don't rely on one hack. We build a diversified traffic portfolio to ensure stability and growth.
                     </p>

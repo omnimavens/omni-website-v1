@@ -14,7 +14,7 @@
     </section>
 
     
-    <section class="content-section">
+    <section class="content-section common-padding">
         <div class="container">
             <div class="layout-grid">
                 

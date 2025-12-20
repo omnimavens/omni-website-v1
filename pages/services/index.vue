@@ -11,7 +11,7 @@ A modular system of specialized services designed to work alone or together. We 
     </section>
 
 
-     <section class="connection-section">
+     <section class="connection-section common-padding">
         <div class="container">
             <div class="conn-grid">
                 <div data-aos="fade-right">
@@ -28,7 +28,7 @@ A modular system of specialized services designed to work alone or together. We 
         </div>
     </section>
 
-     <section class="service-category">
+     <section class="service-category common-padding">
         <div class="container">
             <div class="cat-header">
                 <h2 class="cat-title"><i class="fa-solid fa-magnifying-glass"></i> Search & Discovery</h2>
@@ -82,7 +82,7 @@ A modular system of specialized services designed to work alone or together. We 
         </div>
     </section>
 
-    <section class="service-category">
+    <section class="service-category common-padding">
         <div class="container">
             <div class="cat-header">
                 <h2 class="cat-title"><i class="fa-solid fa-pen-nib"></i> Brand & Creative</h2>
@@ -136,7 +136,7 @@ A modular system of specialized services designed to work alone or together. We 
         </div>
     </section>
 
-    <section class="service-category" style="border-bottom: none;">
+    <section class="service-category common-padding" style="border-bottom: none;">
         <div class="container">
             <div class="cat-header">
                 <h2 class="cat-title"><i class="fa-solid fa-code"></i> Tech & Retention</h2>
@@ -155,7 +155,7 @@ A modular system of specialized services designed to work alone or together. We 
                         <li><i class="fa-solid fa-check"></i> Speed Optimization</li>
                         <li><i class="fa-solid fa-check"></i> CRO (Conversion Rate Opt)</li>
                     </ul>
-                    <a href="/services/website-development" class="s-link">Explore Web <i class="fa-solid fa-arrow-right"></i></a>
+                    <NuxtLink :to="{ name: 'website-development' }" class="s-link">Explore Web <i class="fa-solid fa-arrow-right"></i></NuxtLink>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="50">
@@ -169,7 +169,7 @@ A modular system of specialized services designed to work alone or together. We 
                         <li><i class="fa-solid fa-check"></i> Drip Automation Flows</li>
                         <li><i class="fa-solid fa-check"></i> List Segmentation</li>
                     </ul>
-                    <a href="/services/email-marketing" class="s-link">Explore Email <i class="fa-solid fa-arrow-right"></i></a>
+                    <NuxtLink :to="{ name: 'services' }"  class="s-link">Explore Email <i class="fa-solid fa-arrow-right"></i></NuxtLink>
                 </div>
 
             </div>
@@ -180,7 +180,7 @@ A modular system of specialized services designed to work alone or together. We 
         <div class="container">
             <div style="text-align: center;">
                 <span class="section-subtitle">How We Work</span>
-                <h2 style="font-size: 36px;">The Omni Execution Model</h2>
+                <h2 style="">The Omni Execution Model</h2>
             </div>
             <div class="process-steps">
                 <div class="p-step" data-aos="fade-up" data-aos-delay="0">

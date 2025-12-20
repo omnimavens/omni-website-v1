@@ -1,3 +1,15 @@
+@media screen and (max-width: 1599px) {
+    .about-hero {padding: 110px 0;}
+    .hero-title {font-size: 62px;margin-bottom: 20px;line-height: 1;}
+    
+}
+
+@media screen and (max-width: 1365px) {
+    .container {width: 96%;}
+    .sol-card {padding: 30px;}
+    .sol-desc {margin-bottom: 20px;}
+}
+
 @media screen and (max-width: 1279px) {
     .logo img{width: 240px;}
     .hero-section {padding-top: 180px;padding-bottom: 190px;}
@@ -5,6 +17,17 @@
     .nav-links {gap: 25px;}
     .btn-primary {padding: 12px 25px;}
     .service-grid {grid-template-columns: repeat(2, 1fr);}
+    .stat-num {font-size: 50px;}
+    .common-padding {padding: 70px 0;}
+     .hero-title {font-size: 52px;}
+     .hero-desc {font-size: 18px;width: 65%}
+     .sol-header {margin-bottom: 15px;}
+     .sol-title {font-size: 25px;margin-bottom: 15px;line-height: 35px;}
+     .solutions-grid, .stage-grid {gap: 25px;grid-template-columns: repeat(1, 1fr);}
+     .layout-grid {gap: 30px;}
+     .sidebar-card {padding: 20px 15px;border-radius: 16px;}
+     .content-block {margin-bottom: 0;}
+     .eco-grid {grid-template-columns: 1fr;gap: 30px;}
 }
  
  @media screen and (max-width: 1023px) {
@@ -23,13 +46,25 @@
     .sol-grid-home {margin-top: 25px;gap: 20px;}
     .sol-h3 {font-size: 24px;margin-bottom: 10px;}
     .common-padding {padding: 70px 0;}
+    .stats-grid {grid-template-columns: repeat(2, 1fr);}
+    .hero-desc {width: 90%;}
+    .nav-links {gap: 15px;}
+    .container {width: auto;}
+    .nav-links a {font-size: 15px;}
+    .nav-links a.btn-primary {padding: 9px 15px;}
+    .logo img {width: 225px;}
+    .about-hero {padding: 60px 0;}
+    .conn-grid , .sc-grid {gap: 40px;}
+    .uni-form-card {padding: 30px 25px;}
+    .layout-grid , .content-section .highlight-box ul {grid-template-columns: 1fr;}
 
+    
 }
 @media screen and (max-width: 767px) {
     .nav-links, .desktop-btn { display: none !important; }
     .hamburger { display: block; }
     .footer-grid { grid-template-columns: 1fr; gap: 40px; }
-
+    
     .nav-links, .desktop-btn { display: none !important; }
     .hamburger { display: block; }
     .footer-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -41,10 +76,46 @@
     footer .logo img{margin: 0 auto;text-align: center;width: 240px;}
     footer .social-links div, footer .contact-info li {justify-content: center;}
     footer .main-footer {text-align: center;}
+    .stat-num {font-size: 42px;}
+
+    .hero-title {font-size: 42px;margin-bottom: 15px;}
+    h2 {font-size: 36px;line-height: 43px;}
+    .container {width: 98%;}
+    .mobile-links li {margin-bottom: 10px;}
+    .mobile-links a {font-size: 26px;}
+    .ecosystem-box {padding: 25px;}
 }
 
 @media screen and (max-width: 639px) {
-  .hero-section {padding-top: 100px;padding-bottom: 175px;}
-  .hero-sub {font-size: 18px;}
-  h2 {font-size: 35px;line-height: 40px;}
+    .hero-section {padding-top: 100px;padding-bottom: 175px;}
+    .hero-sub {font-size: 18px;}
+    h2 {font-size: 35px;line-height: 40px;}
+    .stats-grid , .tech-list {grid-template-columns: repeat(1, 1fr);}
+    .hero-desc {width: auto;font-size: 16px;}
+    .quote-box {padding: 15px;}
+    .conn-grid {gap: 30px;}
+    .hero-title {font-size: 38px;}
+    .cat-title {font-size: 30px;gap: 10px;}
+    .cat-header {margin-bottom: 30px;}
+    .service-card {padding: 25px;}
+    .cat-title i {font-size: 22px;}
+    .s-head {flex-direction: column;gap: 15px;}
+    .s-tag {order: -1;}
+    .stage-card {padding: 20px;}
+    .framework-card {padding: 15px;}
+    .content-block h3 {font-size: 20px;margin-bottom: 5px;line-height: 30px;}
+    .f-step {font-size: 28px;order: -1;}
+    .f-header {flex-direction: column;gap: 15px;margin-bottom: 10px;align-items: start;}
+    .sc-title {font-size: 30px;}
+    .strat-card {padding: 30px;}
+    .mix-list {grid-template-columns: 1fr;gap: 10px;}
+    .pain-list li {align-items: start;gap: 6px;flex-direction: column;}
+    .pain-list li:not(:last-child){margin-bottom: 20px;}
+    .sc-metric-item h4 {font-size: 24px;}
+    .sc-metrics {gap: 30px;}
+}
+
+@media screen and (max-width: 479px) {
+  .common-padding {padding: 50px 0;}
+  .container {width: 99%;}
 }

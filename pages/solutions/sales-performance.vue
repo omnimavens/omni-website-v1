@@ -13,7 +13,7 @@
         </div>
     </section>
 
-    <section class="connection-section">
+    <section class="connection-section common-padding">
         <div class="container">
             <div class="conn-grid ">
                 <div data-aos="fade-left">
@@ -34,7 +34,7 @@
         </div>
     </section>
 
-    <section class="strategy-section">
+    <section class="strategy-section common-padding">
         <div class="container">
             <div style="text-align: center;">
                 <span class="section-subtitle">Our Framework</span>
@@ -70,12 +70,12 @@
         </div>
     </section>
 
-    <section class="mix-section">
+    <section class="mix-section common-padding">
         <div class="container">
             <div class="mix-grid">
                 <div data-aos="fade-right">
                     <span class="section-subtitle">The Stack</span>
-                    <h2 style="font-size: 36px; margin-bottom: 20px;">Profit Optimization Engine</h2>
+                    <h2 style=" margin-bottom: 20px;">Profit Optimization Engine</h2>
                     <p style="color: #aaa; margin-bottom: 30px;">
                         Revenue growth requires fixing the entire funnel, not just the top. We deploy a full-stack solution to maximize every dollar.
                     </p>
@@ -120,7 +120,7 @@
                         <div class="sc-metric-item"><h4>5.2x</h4><p>ROAS</p></div>
                         <div class="sc-metric-item"><h4>+25%</h4><p>AOV Increase</p></div>
                     </div>
-                    <a href="/case-studies.html" class="btn-primary" style="padding: 12px 30px;">Read Full Story</a>
+                    <NuxtLink :to="{ name: 'services' }"  class="btn-primary" style="padding: 12px 30px;">Read Full Story</NuxtLink>
                 </div>
             </div>
         </div>

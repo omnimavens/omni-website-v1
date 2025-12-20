@@ -13,7 +13,7 @@
         </div>
     </section>
 
-    <section class="connection-section">
+    <section class="connection-section common-padding">
         <div class="container">
             <div class="conn-grid ">
                 <div data-aos="fade-left">
@@ -34,7 +34,7 @@
         </div>
     </section>
 
-    <section class="strategy-section">
+    <section class="strategy-section common-padding">
         <div class="container">
             <div style="text-align: center;">
                 <span class="section-subtitle">Our Framework</span>
@@ -71,12 +71,12 @@
     </section>
 
     
-    <section class="mix-section">
+    <section class="mix-section common-padding">
         <div class="container">
             <div class="mix-grid">
                 <div data-aos="fade-right">
                     <span class="section-subtitle">The Stack</span>
-                    <h2 style="font-size: 36px; margin-bottom: 20px;">Orchestrated Execution</h2>
+                    <h2 style=" margin-bottom: 20px;">Orchestrated Execution</h2>
                     <p style="color: #aaa; margin-bottom: 30px;">
                         Lead generation isn't just "running ads." It requires a synchronized effort across multiple disciplines. Here is what we deploy for you:
                     </p>
@@ -121,7 +121,7 @@
                         <div class="sc-metric-item"><h4>-45%</h4><p>CAC</p></div>
                         <div class="sc-metric-item"><h4>$3M</h4><p>Pipeline Added</p></div>
                     </div>
-                    <a href="/case-studies.html" class="btn-primary" style="padding: 12px 30px;">Read Full Story</a>
+                    <NuxtLink :to="{ name: 'services' }"  class="btn-primary" style="padding: 12px 30px;">Read Full Story</NuxtLink>
                 </div>
             </div>
         </div>
