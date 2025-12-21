@@ -214,18 +214,17 @@
 
 <script setup lang="ts">
     definePageMeta({
-        title: 'GEO & AI Search Optimization | Omni Mavens',
+        title: 'GEO Optimization Services [Rank in AI Overviews]',
         name: 'geo-ai-optimization',
     })
 
     useSeoMeta({
-        title: ' GEO & AI Search Optimization | Omni Mavens', // Will become "Home - My Amazing Site"
-        description: 'Expert GEO (Generative Engine Optimization) services. We optimize your brand to rank in Google SGE, ChatGPT, and Perplexity AI answers.',
+        title: ' GEO Optimization Services [Rank in AI Overviews]',
+        description: "Don't vanish from search. Our GEO services optimize your brand for ChatGPT, Gemini & Perplexity citations. Master Generative Engine Optimization.",
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'GEO & AI Search Optimization | Omni Mavens',
-        ogDescription: 'Expert GEO (Generative Engine Optimization) services. We optimize your brand to rank in Google SGE, ChatGPT, and Perplexity AI answers.',
-        ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
+        ogTitle: 'GEO Optimization Services [Rank in AI Overviews]',
+        ogDescription: "Don't vanish from search. Our GEO services optimize your brand for ChatGPT, Gemini & Perplexity citations. Master Generative Engine Optimization.",
         twitterCard: 'summary_large_image',
     })
 

@@ -261,18 +261,17 @@
 
 <script setup lang="ts">
     definePageMeta({
-        title: 'Social Media Marketing & Meta Ads | Omni Mavens',
+        title: 'Social Media Marketing Services [Turn Likes to Leads]',
         name: 'social-media-marketing',
     })
 
     useSeoMeta({
-        title: ' Social Media Marketing & Meta Ads | Omni Mavens', // Will become "Home - My Amazing Site"
-        description:'Strategic Content Marketing by Omni Mavens. We build authority through SEO blogs, video, whitepapers, and multi-channel distribution strategies.',
+        title: ' Social Media Marketing Services [Turn Likes to Leads]', 
+        description:'Stop posting into the void. Our data-driven social strategies turn followers into revenue. Expert management for FB, IG & LinkedIn. Get your free audit.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Social Media Marketing & Meta Ads | Omni Mavens',
-        ogDescription:'Strategic Content Marketing by Omni Mavens. We build authority through SEO blogs, video, whitepapers, and multi-channel distribution strategies..',
-        ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
+        ogTitle: 'Social Media Marketing Services [Turn Likes to Leads]',
+        ogDescription:'Stop posting into the void. Our data-driven social strategies turn followers into revenue. Expert management for FB, IG & LinkedIn. Get your free audit..',
         twitterCard: 'summary_large_image',
     })
 

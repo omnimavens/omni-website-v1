@@ -222,18 +222,17 @@
 
 <script setup lang="ts">
     definePageMeta({
-        title: 'Content Marketing & Strategy | Omni Mavens',
+        title: 'Content Marketing Services | Drive Traffic & Leads',
         name: 'content-marketing',
     })
 
     useSeoMeta({
-        title: ' Content Marketing & Strategy | Omni Mavens', // Will become "Home - My Amazing Site"
-        description:'Strategic Content Marketing by Omni Mavens. We build authority through SEO blogs, video, whitepapers, and multi-channel distribution strategies.',
+        title: ' Content Marketing Services | Drive Traffic & Leads',
+        description:'Elevate your brand with expert content marketing services. We create data-driven content that boosts SEO traffic and converts leads. Get your strategy now.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Content Marketing & Strategy | Omni Mavens',
-        ogDescription:'Strategic Content Marketing by Omni Mavens. We build authority through SEO blogs, video, whitepapers, and multi-channel distribution strategies..',
-        ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
+        ogTitle: 'Content Marketing Services | Drive Traffic & Leads',
+        ogDescription:'Elevate your brand with expert content marketing services. We create data-driven content that boosts SEO traffic and converts leads. Get your strategy now.',
         twitterCard: 'summary_large_image',
     })
 

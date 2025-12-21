@@ -183,18 +183,17 @@
 
 <script setup lang="ts">
     definePageMeta({
-        title: 'PPC Management & Paid Search Services | Omni Mavens',
+        title: 'PPC Management Services | Maximize ROAS & Leads',
         name: 'ppc-management',
     })
 
     useSeoMeta({
-        title: ' PPC Management & Paid Search Services | Omni Mavens', // Will become "Home - My Amazing Site"
-        description: 'High-performance PPC Management. We stop wasted spend and scale revenue using Google Ads, Bing, and Remarketing strategies focused on ROAS.',
+        title: ' PPC Management Services | Maximize ROAS & Leads',
+        description: 'Scale revenue with expert PPC management services. We optimize Google & Bing campaigns to lower CPA and boost ROI. Get a free quote.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'PPC Management & Paid Search Services | Omni Mavens',
-        ogDescription: 'High-performance PPC Management. We stop wasted spend and scale revenue using Google Ads, Bing, and Remarketing strategies focused on ROAS.',
-        ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
+        ogTitle: 'PPC Management Services | Maximize ROAS & Leads',
+        ogDescription: 'Scale revenue with expert PPC management services. We optimize Google & Bing campaigns to lower CPA and boost ROI. Get a free quote.',
         twitterCard: 'summary_large_image',
     })
 

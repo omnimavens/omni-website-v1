@@ -181,18 +181,17 @@
 
 <script setup lang="ts">
     definePageMeta({
-        title: 'SEO & Organic Search Services | Omni Mavens',
+        title: 'SEO Services [Outrank Your Competitors]',
         name: 'seo-services',
     })
 
     useSeoMeta({
-        title: ' SEO & Organic Search Services | Omni Mavens', // Will become "Home - My Amazing Site"
-        description: 'Data-driven SEO services by Omni Mavens. We handle Technical SEO, On-Page Strategy, and High-Authority Link Building to drive revenue, not just traffic.',
+        title: ' SEO Services [Outrank Your Competitors]',
+        description: "Don't let competitors steal your customers. We build sustainable SEO strategies to increase visibility and drive high-quality leads. Get a free audit",
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'SEO & Organic Search Services | Omni Mavens',
-        ogDescription: 'Data-driven SEO services by Omni Mavens. We handle Technical SEO, On-Page Strategy, and High-Authority Link Building to drive revenue, not just traffic.',
-        ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
+        ogTitle: 'SEO Services [Outrank Your Competitors]',
+        ogDescription: "Don't let competitors steal your customers. We build sustainable SEO strategies to increase visibility and drive high-quality leads. Get a free audit",
         twitterCard: 'summary_large_image',
     })
 

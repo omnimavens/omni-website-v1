@@ -55,7 +55,7 @@
                     <i class="fa-solid fa-route strat-icon"></i>
                     <h3 class="strat-title">Nurture Flows</h3>
                     <p class="strat-desc">We build "Set and Forget" sequences. Welcome Series to educate, Abandoned Cart to recover revenue, and Post-Purchase to upsell.</p>
-                    <a href="/services/email-marketing" class="strat-link">View Email Services</a>
+                    <a href="/services" class="strat-link">View Email Services</a>
                 </div>
 
                 <div class="strat-card" data-aos="fade-up" data-aos-delay="200">

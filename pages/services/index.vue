@@ -214,13 +214,12 @@ A modular system of specialized services designed to work alone or together. We 
     })
 
     useSeoMeta({
-        title: ' Services | Digital Marketing Services', // Will become "Home - My Amazing Site"
-        description: 'Welcome to the OmniMavens.',
+        title: '  Digital Marketing Services [Scale Revenue Faster]',
+        description: 'Accelerate growth with a data-driven digital marketing agency. We integrate SEO, PPC & Creative into one cohesive strategy. Get your roadmap.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'OmniMavens - The Digital Marketing Agency',
-        ogDescription: 'Your digital marketing agency focused on you, your business, your results.',
-        ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
+        ogTitle: 'Digital Marketing Services [Scale Revenue Faster]',
+        ogDescription: 'Accelerate growth with a data-driven digital marketing agency. We integrate SEO, PPC & Creative into one cohesive strategy. Get your roadmap.',
         twitterCard: 'summary_large_image',
     })
 

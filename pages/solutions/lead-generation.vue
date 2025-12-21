@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-envelope-open-text strat-icon"></i>
                     <h3 class="strat-title">Nurture</h3>
                     <p class="strat-desc">We set up automated email and SMS flows that educate the prospect and push them to book a call only when they are qualified.</p>
-                    <a href="/services/email-marketing" class="strat-link">View Automation</a>
+                    <a href="/services" class="strat-link">View Automation</a>
                 </div>
 
             </div>

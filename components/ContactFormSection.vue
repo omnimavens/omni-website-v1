@@ -106,7 +106,7 @@
                         <label class="uni-label">Phone Number <span style="color:#E08322">*</span></label>
 
                         <div class="phone-group">
-                        <select v-model="state.form.country_code" class="uni-select">
+                        <select v-model="state.form.country_code" class="uni-select" aria-label="Country Code">
                             <option value="+91">🇮🇳 +91</option>
                             <option value="+1">🇺🇸 +1</option>
                             <option value="+44">🇬🇧 +44</option>
@@ -129,7 +129,7 @@
                     <!-- Primary Goal -->
                     <div class="uni-group">
                         <label class="uni-label">Primary Goal <span style="color:#E08322">*</span></label>
-                        <select v-model="state.form.goal" class="uni-select" required>
+                        <select v-model="state.form.goal" class="uni-select" required aria-label="Primary Goal">
                         <option value="" disabled>Select your objective...</option>
                         <option value="Revenue">Increase Revenue / Sales</option>
                         <option value="Leads">Generate Qualified Leads</option>
@@ -143,7 +143,7 @@
                     <!-- Budget -->
                     <div class="uni-group">
                         <label class="uni-label">Monthly Budget Range</label>
-                        <select v-model="state.form.budget" class="uni-select">
+                        <select v-model="state.form.budget" class="uni-select" aria-label="Budget">
                         <option value="" disabled selected>Select a range...</option>
                         <option value="under_1k">Less than $1,000</option>
                         <option value="1k_5k">$1,000 - $5,000</option>
