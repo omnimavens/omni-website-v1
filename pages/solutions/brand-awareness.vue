@@ -143,7 +143,7 @@ Trust is the ultimate currency. We elevate your visual identity, content, and th
         // Social Media Cards (Open Graph)
         ogTitle: 'Get Found Online & Search Visibility - The Digital Marketing Agency',
         ogDescription: 'Build an unignorable brand. We strengthen your digital presence through cohesive visual identity, thought leadership content, and social authority.',
-        ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
+        ogImage: 'og-image.png',
         twitterCard: 'summary_large_image',
     })
 

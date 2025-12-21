@@ -15,10 +15,10 @@
             --react-cyan: #61dafb;
         }
 
-        header li, footer li { list-style: none; }
+        header li, footer li { list-style: none;}
         ul { padding: 0; margin: 0; }
 
-        html { scroll-behavior: smooth; }
+        html { scroll-behavior: smooth;font-display: swap;  }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Manrope', sans-serif; }
         body { background-color: var(--dark-bg); color: var(--text-white); overflow-x: hidden; line-height: 1.7; }
         a { text-decoration: none; color: inherit; transition: 0.3s; }
@@ -99,7 +99,7 @@
             border-top: 1px solid #222; border-bottom: 1px solid #222; padding: 15px 0; background: #0b0b0b;
         }
         .marquee-content { display: inline-block; animation: scroll 25s linear infinite; }
-        .marquee-item { font-family: 'Syne'; font-size: 18px; font-weight: 700; color: #333; margin-right: 50px; text-transform: uppercase; }
+        .marquee-item { font-family: 'Syne'; font-size: 18px; font-weight: 700; color: #aaa; margin-right: 50px; text-transform: uppercase; }
         .marquee-item span { color: var(--brand-accent); margin-right: 10px; }
 
          /* --- SERVICES GRID (Core 8) --- */

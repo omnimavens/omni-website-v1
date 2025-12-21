@@ -14,7 +14,7 @@
                 Your submission has been received successfully. Our team is reviewing your details and will be in touch within 24 hours.
             </p>
 
-            <NuxtLink to="/blogs" class="btn-primary" data-aos="fade-up" data-aos-delay="300">
+            <NuxtLink to="/" class="btn-primary" data-aos="fade-up" data-aos-delay="300">
                 Return to Home
             </NuxtLink>
 

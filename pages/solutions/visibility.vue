@@ -55,7 +55,7 @@
                     <i class="fa-solid fa-map-location-dot strat-icon"></i>
                     <h3 class="strat-title">Local & Entity</h3>
                     <p class="strat-desc">We establish you as a real entity. We optimize Google Business Profiles (GMB), build citations, and fix knowledge graphs.</p>
-                    <a href="/services/seo/local-seo" class="strat-link">View Local SEO</a>
+                    <a href="/services/seo" class="strat-link">View Local SEO</a>
                 </div>
 
                 <div class="strat-card" data-aos="fade-up" data-aos-delay="200">

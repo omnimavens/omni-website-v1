@@ -222,18 +222,17 @@
 
 <script setup lang="ts">
     definePageMeta({
-        title: 'Branding & Creative Strategy | Omni Mavens',
+        title: 'Branding & Creative Services [Stop Being Invisible]',
         name: 'branding-creative',
     })
 
     useSeoMeta({
-        title: ' Branding & Creative Strategy | Omni Mavens', // Will become "Home - My Amazing Site"
-        description:'Strategic Content Marketing by Omni Mavens. We build authority through SEO blogs, video, whitepapers, and multi-channel distribution strategies.',
+        title: ' Branding & Creative Services [Stop Being Invisible]',
+        description:'Is your brand blending in? Our strategic branding services build identities that demand attention. Design, voice & impact that sells.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Branding & Creative Strategy | Omni Mavens',
-        ogDescription:'Strategic Content Marketing by Omni Mavens. We build authority through SEO blogs, video, whitepapers, and multi-channel distribution strategies..',
-        ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
+        ogTitle: 'Branding & Creative Services [Stop Being Invisible]',
+        ogDescription:'Is your brand blending in? Our strategic branding services build identities that demand attention. Design, voice & impact that sells.',
         twitterCard: 'summary_large_image',
     })
 

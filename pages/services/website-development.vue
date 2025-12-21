@@ -251,13 +251,12 @@
     })
 
     useSeoMeta({
-        title: ' Website Development & UX Design | Omni Mavens', // Will become "Home - My Amazing Site"
-        description:'Strategic Content Marketing by Omni Mavens. We build authority through SEO blogs, video, whitepapers, and multi-channel distribution strategies.',
+        title: ' Website Development & UX Design | Omni Mavens',
+        description:'Stop losing customers to slow sites. Our custom website development services deliver blazing speed and SEO-ready code. Build a 24/7 sales machine.',
         
         // Social Media Cards (Open Graph)
         ogTitle: 'Website Development & UX Design | Omni Mavens',
-        ogDescription:'Strategic Content Marketing by Omni Mavens. We build authority through SEO blogs, video, whitepapers, and multi-channel distribution strategies..',
-        ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
+        ogDescription:'Stop losing customers to slow sites. Our custom website development services deliver blazing speed and SEO-ready code. Build a 24/7 sales machine..',
         twitterCard: 'summary_large_image',
     })
 

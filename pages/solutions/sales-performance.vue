@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-rotate-right strat-icon"></i>
                     <h3 class="strat-title">Retain (Forever)</h3>
                     <p class="strat-desc">We increase LTV (Lifetime Value) using automated email flows for post-purchase upsells, cross-sells, and win-backs.</p>
-                    <a href="/services/email-marketing" class="strat-link">View Retention</a>
+                    <a href="/services" class="strat-link">View Retention</a>
                 </div>
 
             </div>
