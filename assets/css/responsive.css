@@ -1,6 +1,10 @@
 @media screen and (max-width: 1599px) {
     .about-hero {padding: 110px 0;}
     .hero-title {font-size: 62px;margin-bottom: 20px;line-height: 1;}
+    .featured-title {font-size: 32px;line-height: 1.2;}
+    .blog-layout {gap: 40px;}
+    h2 {font-size: 38px;line-height: 45px;}
+    .blog-hero h1 {font-size: 52px;}
     
 }
 
@@ -8,6 +12,9 @@
     .container {width: 96%;}
     .sol-card {padding: 30px;}
     .sol-desc {margin-bottom: 20px;}
+    h2 {font-size: 36px;}
+    .blog-layout .blog-cta {padding: 20px;margin-top: 20px;}
+    .blog-hero h1 {font-size: 50px;}
 }
 
 @media screen and (max-width: 1279px) {
@@ -28,6 +35,10 @@
      .sidebar-card {padding: 20px 15px;border-radius: 16px;}
      .content-block {margin-bottom: 0;}
      .eco-grid {grid-template-columns: 1fr;gap: 30px;}
+
+     .blog-grid {grid-template-columns: repeat(2, 1fr);}
+     .blog-layout {grid-template-columns: 1fr;}
+    .blog-hero h1 {font-size: 42px;}
 }
  
  @media screen and (max-width: 1023px) {
@@ -36,7 +47,7 @@
     .about-flex { flex-direction: column; }
 
     .services-grid, .intro-grid, .process-steps { grid-template-columns: 1fr; }
-    .hero-title { font-size: 50px; }
+    .hero-title { font-size: 42px; }
 
     .strategy-cards, .mix-grid, .sc-grid, .conn-grid, .uni-grid {grid-template-columns: 1fr;}
     .service-case-section {padding: 60px 0;}
@@ -56,7 +67,11 @@
     .about-hero {padding: 60px 0;}
     .conn-grid , .sc-grid {gap: 40px;}
     .uni-form-card {padding: 30px 25px;}
-    .layout-grid , .content-section .highlight-box ul {grid-template-columns: 1fr;}
+    .layout-grid , .content-section .highlight-box ul , .featured-card {grid-template-columns: 1fr;}
+    .featured-content {padding: 40px;}
+    .filter-bar {top: 75px;}
+    .blog-hero h1 {font-size: 38px;}
+     h2 {font-size: 32px;line-height: 40px;}
 
     
 }
@@ -78,23 +93,29 @@
     footer .main-footer {text-align: center;}
     .stat-num {font-size: 42px;}
 
-    .hero-title {font-size: 42px;margin-bottom: 15px;}
+    .hero-title {font-size: 36px;margin-bottom: 15px;}
     h2 {font-size: 36px;line-height: 43px;}
     .container {width: 98%;}
     .mobile-links li {margin-bottom: 10px;}
     .mobile-links a {font-size: 26px;}
     .ecosystem-box {padding: 25px;}
+
+    .blog-grid {grid-template-columns: repeat(1, 1fr);}
+    .featured-img {min-height: 340px;}
+    .filter-bar {top: 60px;padding: 30px 0;}
+    .interlink-box {flex-direction: column;text-align: center;gap: 15px ;}
+    .blog-layout {padding-top: 40px;padding-bottom: 40px;}
 }
 
 @media screen and (max-width: 639px) {
     .hero-section {padding-top: 100px;padding-bottom: 175px;}
     .hero-sub {font-size: 18px;}
-    h2 {font-size: 35px;line-height: 40px;}
+    h2 {font-size: 32px;line-height: 40px;}
     .stats-grid , .tech-list {grid-template-columns: repeat(1, 1fr);}
     .hero-desc {width: auto;font-size: 16px;}
     .quote-box {padding: 15px;}
     .conn-grid {gap: 30px;}
-    .hero-title {font-size: 38px;}
+    .hero-title {font-size: 34px;}
     .cat-title {font-size: 30px;gap: 10px;}
     .cat-header {margin-bottom: 30px;}
     .service-card {padding: 25px;}
@@ -113,9 +134,20 @@
     .pain-list li:not(:last-child){margin-bottom: 20px;}
     .sc-metric-item h4 {font-size: 24px;}
     .sc-metrics {gap: 30px;}
+    .featured-content {padding: 25px;}
+    .featured-img {min-height: 240px;}
+    .featured-title {font-size: 26px;}
+    .featured-desc {margin-bottom: 15px;}
+    .blog-hero {padding-top: 50px;padding-bottom: 50px;}
+    .filter-bar {padding: 25px 0;padding-bottom: 15px;}
+    .blog-hero h1 {font-size: 30px;}
+    .blog-layout h3 {font-size: 22px;}
 }
 
 @media screen and (max-width: 479px) {
   .common-padding {padding: 50px 0;}
   .container {width: 99%;}
+  .featured-title {font-size: 20px;}
+  .featured-content {padding: 20px;}
+  .featured-img {min-height: 175px;}
 }

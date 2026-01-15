@@ -19,7 +19,7 @@
                 </p>
             </div>
 
-            <p>Here’s the direct answer first: A winning digital marketing strategy for 2025 is a unified ecosystem. It’s a world where organic search fuels paid ads, paid data refines your content, and a lightning-fast Nuxt-powered website serves as your conversion engine.</p>
+            <p>Here’s the direct answer first: A winning digital marketing strategy for 2026 is a unified ecosystem. It’s a world where organic search fuels paid ads, paid data refines your content, and a lightning-fast Nuxt-powered website serves as your conversion engine.</p>
             
             <p>This is the foundation of the <strong>Omni Growth Ecosystem</strong>.</p>
 
@@ -121,6 +121,7 @@
             </ul>
 
             <img src="https://placehold.co/800x400/161616/E08322?text=Demand+Generation+Loops" alt="Demand Generation Loops" class="in-body-image">
+            
 
             <h3 style="margin-top: 30px;">Layer 3: Demand Capture (CRO + Email/SMS)</h3>
             <p>Traffic is expensive—retention is profitable. We increase conversions using personalized experiences, behavior-based recommendations, and multi-step nurturing flows. This turns fleeting attention into revenue.</p>
