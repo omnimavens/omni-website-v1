@@ -13,20 +13,20 @@ Expert guides, data analysis, and strategies on Amazon FBA, SEO, PPC, and Digita
     <section class="blog-hero">
         <div class="container">
             <div class="featured-card" data-aos="fade-up">
-                <div style="height: 100%;">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Marketing Data" class="featured-img">
+                <div class="featured-thumb-img">
+                    <img src="/public/images/andromeda-thumb.png" alt="Meta Andromeda Update" class="featured-img">
                 </div>
                 <div class="featured-content">
                     <span class="meta-tag">Featured Report</span>
-                    <h2 class="featured-title">The State of Digital Marketing in 2025: AI, Privacy, and Profit</h2>
+                    <h2 class="featured-title">Meta Andromeda Update 2026: The Ultimate Strategy Guide</h2>
                     <p class="featured-desc">
-                        With Google SGE reshaping search and tracking pixels disappearing, the playbook has changed. Here is the new roadmap for CMOs and Founders.
+                         Why your old targeting hacks are failing, and how to master AI-driven ad retrieval.
                     </p>
                     <div style="display: flex; align-items: center; gap: 20px; color: #666; font-size: 13px; margin-bottom: 30px;">
-                        <span><i class="fa-regular fa-clock"></i> 8 Min Read</span>
-                        <span><i class="fa-regular fa-calendar"></i> Nov 28, 2025</span>
+                        <span><i class="fa-regular fa-clock"></i> 9 Min Read</span>
+                        <span><i class="fa-regular fa-calendar"></i> Jan 16, 2026</span>
                     </div>
-                    <NuxtLink :to="{ name: 'inner-blog' }" class="btn-primary">Read Full Report</NuxtLink>
+                    <NuxtLink :to="{ name: 'meta-andromeda-update-strategy-guide' }" class="btn-primary">Read Full Report</NuxtLink>
                 </div>
             </div>
         </div>
@@ -52,6 +52,22 @@ Expert guides, data analysis, and strategies on Amazon FBA, SEO, PPC, and Digita
         <div class="container">
             
             <div class="blog-grid" id="blogGrid">
+
+                <article class="article-card" data-category="tech" data-aos="fade-up" v-show="activeCategory === 'all' || activeCategory === 'tech'">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Coding" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-cat">Tech</span>
+                            <span>Nov 28, 2025</span>
+                        </div>
+                        <h3 class="card-title"><a href="#">The State of Digital Marketing in 2026: AI, Privacy, and Profit</a></h3>
+                        <p class="card-desc">With Google SGE reshaping search and tracking pixels disappearing, the playbook has changed.</p>
+                        <NuxtLink :to="{ name: 'inner-blog' }" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></NuxtLink>
+                    </div>
+                </article>
+
                 
                 <article class="article-card" data-category="seo" data-aos="fade-up" data-aos-delay="0" v-show="activeCategory === 'all' || activeCategory === 'seo'">
                     <div class="card-img-wrap">
