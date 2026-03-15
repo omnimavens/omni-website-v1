@@ -15,17 +15,17 @@ Whether you're looking for growth, strategy, or clarity—our experts are here t
 
 <script setup lang="ts">
     definePageMeta({
-        title: 'Connect with us Now - The Digital Marketing Agency',
+        title: 'Contact Page',
         name: 'contact'
     })
 
     useSeoMeta({
-        title: ' Connect with us Now | Digital Marketing Services', // Will become "Home - My Amazing Site"
-        description: 'Welcome to the OmniMavens.',
+        title: ' Contact Our Digital Marketing Experts | Omni Mavens',
+        description: 'Ready to scale your business? Contact Omni Mavens for expert digital marketing strategies including SEO, PPC, content, and growth consulting..',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Connect with us Now - The Digital Marketing Agency',
-        ogDescription: 'Your digital marketing agency focused on you, your business, your results.',
+        ogTitle: 'Contact Our Digital Marketing Experts | Omni Mavens',
+        ogDescription: 'Ready to scale your business? Contact Omni Mavens for expert digital marketing strategies including SEO, PPC, content, and growth consulting..',
         ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
         twitterCard: 'summary_large_image',
     })

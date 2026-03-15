@@ -138,12 +138,12 @@
     })
 
     useSeoMeta({
-        title: ' Lead Generation Solutions | Omni Mavens', // Will become "Home - My Amazing Site"
-        description: 'Turn traffic into revenue. Our Lead Generation ecosystem combines high-intent PPC, conversion-optimized landing pages, and automated nurture sequences.',
+        title: ' B2B Lead Generation Services That Drive Sales',
+        description: 'Capture high-intent prospects with proven B2B lead generation strategies designed to accelerate your sales pipeline and increase conversions.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Get Found Online & Search Visibility - The Digital Marketing Agency',
-        ogDescription: 'Turn traffic into revenue. Our Lead Generation ecosystem combines high-intent PPC, conversion-optimized landing pages, and automated nurture sequences.',
+        ogTitle: ' B2B Lead Generation Services That Drive Sales',
+        ogDescription: 'Capture high-intent prospects with proven B2B lead generation strategies designed to accelerate your sales pipeline and increase conversions.',
         ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
         twitterCard: 'summary_large_image',
     })

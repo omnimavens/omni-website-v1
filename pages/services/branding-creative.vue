@@ -227,12 +227,12 @@
     })
 
     useSeoMeta({
-        title: ' Branding & Creative Services [Stop Being Invisible]',
-        description:'Is your brand blending in? Our strategic branding services build identities that demand attention. Design, voice & impact that sells.',
+        title: ' Creative Branding Services to Build Powerful Brands | Omni Mavens',
+        description:'Create a powerful brand identity with strategic design, messaging, and creative direction that helps your business stand out and grow.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Branding & Creative Services [Stop Being Invisible]',
-        ogDescription:'Is your brand blending in? Our strategic branding services build identities that demand attention. Design, voice & impact that sells.',
+        ogTitle: 'Creative Branding Services to Build Powerful Brands | Omni Mavens',
+        ogDescription:'Create a powerful brand identity with strategic design, messaging, and creative direction that helps your business stand out and grow.',
         twitterCard: 'summary_large_image',
     })
 

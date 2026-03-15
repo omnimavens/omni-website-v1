@@ -219,12 +219,12 @@
     })
 
     useSeoMeta({
-        title: ' GEO Optimization Services [Rank in AI Overviews]',
-        description: "Don't vanish from search. Our GEO services optimize your brand for ChatGPT, Gemini & Perplexity citations. Master Generative Engine Optimization.",
+        title: 'AI SEO & GEO Optimization for AI Search Visibility | Omni Mavens',
+        description: "Optimize your brand for AI search and generative engines with advanced GEO and AI SEO strategies built to future-proof your digital presence.",
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'GEO Optimization Services [Rank in AI Overviews]',
-        ogDescription: "Don't vanish from search. Our GEO services optimize your brand for ChatGPT, Gemini & Perplexity citations. Master Generative Engine Optimization.",
+        ogTitle: 'AI SEO & GEO Optimization for AI Search Visibility | Omni Mavens',
+        ogDescription: "Optimize your brand for AI search and generative engines with advanced GEO and AI SEO strategies built to future-proof your digital presence.",
         twitterCard: 'summary_large_image',
     })
 

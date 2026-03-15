@@ -230,12 +230,12 @@
     })
 
     useSeoMeta({
-        title: 'Omni Mavens - The Digital Marketing Agency', // Will become "Home - My Amazing Site"
-        description: 'Welcome to the Omni Mavens! Your digital marketing agency focused on you, your business, your results.',
+        title: 'Digital Marketing Agency for Scalable Growth | Omni Mavens',
+        description: 'Omni Mavens is a performance-driven digital marketing agency offering SEO, PPC, content, and AI-powered strategies to help businesses scale faster.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Omni Mavens - The Digital Marketing Agency',
-        ogDescription: 'Your digital marketing agency focused on you, your business, your results.',
+        ogTitle: 'Digital Marketing Agency for Scalable Growth | Omni Mavens',
+        ogDescription: 'Omni Mavens is a performance-driven digital marketing agency offering SEO, PPC, content, and AI-powered strategies to help businesses scale faster.',
         twitterCard: 'summary_large_image',
     })
 

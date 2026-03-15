@@ -133,17 +133,17 @@
 
 <script setup lang="ts">
     definePageMeta({
-        title: 'Home Page',
+        title: 'Visibility Page',
         name: 'visibility'
     })
 
     useSeoMeta({
-        title: ' Get Found Online & Search Visibility | Digital Marketing Services', // Will become "Home - My Amazing Site"
-        description: 'Stop being invisible. We build digital infrastructure that forces Google, Maps, and AI engines to rank your brand #1 for high-value searches.',
+        title: ' Search Visibility Services to Dominate Google Rankings | Omni Mavens',
+        description: 'Improve your search visibility with data-driven SEO strategies designed to boost rankings, traffic, and authority across Google and AI search.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Get Found Online & Search Visibility - The Digital Marketing Agency',
-        ogDescription: 'Stop being invisible. We build digital infrastructure that forces Google, Maps, and AI engines to rank your brand #1 for high-value searches.',
+        ogTitle: 'Search Visibility Services to Dominate Google Rankings | Omni Mavens',
+        ogDescription: 'Improve your search visibility with data-driven SEO strategies designed to boost rankings, traffic, and authority across Google and AI search.',
         ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
         twitterCard: 'summary_large_image',
     })

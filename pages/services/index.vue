@@ -214,12 +214,12 @@ A modular system of specialized services designed to work alone or together. We 
     })
 
     useSeoMeta({
-        title: '  Digital Marketing Services [Scale Revenue Faster]',
-        description: 'Accelerate growth with a data-driven digital marketing agency. We integrate SEO, PPC & Creative into one cohesive strategy. Get your roadmap.',
+        title: 'Digital Marketing Services for Business Growth | Omni Mavens',
+        description: 'Explore our full-suite digital marketing services including SEO, PPC management, content marketing, and growth strategies built to scale businesses.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Digital Marketing Services [Scale Revenue Faster]',
-        ogDescription: 'Accelerate growth with a data-driven digital marketing agency. We integrate SEO, PPC & Creative into one cohesive strategy. Get your roadmap.',
+        ogTitle: 'Digital Marketing Services for Business Growth | Omni Mavens',
+        ogDescription: 'Explore our full-suite digital marketing services including SEO, PPC management, content marketing, and growth strategies built to scale businesses.',
         twitterCard: 'summary_large_image',
     })
 

@@ -188,12 +188,12 @@
     })
 
     useSeoMeta({
-        title: ' PPC Management Services | Maximize ROAS & Leads',
-        description: 'Scale revenue with expert PPC management services. We optimize Google & Bing campaigns to lower CPA and boost ROI. Get a free quote.',
+        title: 'PPC Management Services That Maximize ROI | Omni Mavens',
+        description: 'Scale revenue with expert PPC management services designed to optimize ad spend, increase conversions, and generate qualified leads.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'PPC Management Services | Maximize ROAS & Leads',
-        ogDescription: 'Scale revenue with expert PPC management services. We optimize Google & Bing campaigns to lower CPA and boost ROI. Get a free quote.',
+        ogTitle: 'PPC Management Services That Maximize ROI | Omni Mavens',
+        ogDescription: 'Scale revenue with expert PPC management services designed to optimize ad spend, increase conversions, and generate qualified leads.',
         twitterCard: 'summary_large_image',
     })
 

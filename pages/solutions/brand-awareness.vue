@@ -137,12 +137,12 @@ Trust is the ultimate currency. We elevate your visual identity, content, and th
     })
 
     useSeoMeta({
-        title: ' Strengthen Brand Presence & Authority | Omni Mavens',
-        description: 'Build an unignorable brand. We strengthen your digital presence through cohesive visual identity, thought leadership content, and social authority.',
+        title: ' Brand Awareness Strategies That Build Market Authority',
+        description: 'Increase brand recognition and authority with strategic marketing campaigns designed to boost visibility, credibility, and long-term growth.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Get Found Online & Search Visibility - The Digital Marketing Agency',
-        ogDescription: 'Build an unignorable brand. We strengthen your digital presence through cohesive visual identity, thought leadership content, and social authority.',
+        ogTitle: ' Brand Awareness Strategies That Build Market Authority',
+        ogDescription: 'Increase brand recognition and authority with strategic marketing campaigns designed to boost visibility, credibility, and long-term growth.',
         ogImage: 'og-image.png',
         twitterCard: 'summary_large_image',
     })

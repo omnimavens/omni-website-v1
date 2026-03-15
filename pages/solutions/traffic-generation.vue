@@ -138,12 +138,12 @@
     })
 
     useSeoMeta({
-        title: ' Get Found Online & Search Visibility | Digital Marketing Services', // Will become "Home - My Amazing Site"
-        description: 'Stop being invisible. We build digital infrastructure that forces Google, Maps, and AI engines to rank your brand #1 for high-value searches.',
+        title: ' Website Traffic Generation Strategies That Convert | Omni Mavens',
+        description: 'Generate high-quality website traffic through SEO, paid ads, and content marketing strategies built to attract and convert your ideal audience.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Get Found Online & Search Visibility - The Digital Marketing Agency',
-        ogDescription: 'Stop being invisible. We build digital infrastructure that forces Google, Maps, and AI engines to rank your brand #1 for high-value searches.',
+        ogTitle: 'Website Traffic Generation Strategies That Convert | Omni Mavens',
+        ogDescription: 'Generate high-quality website traffic through SEO, paid ads, and content marketing strategies built to attract and convert your ideal audience.',
         ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
         twitterCard: 'summary_large_image',
     })
