@@ -249,6 +249,7 @@
         .uni-list li { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 25px; }
         .uni-bullet { width: 10px; height: 10px; background-color: #E08322; border-radius: 50%; flex-shrink: 0; margin-top: 7px; box-shadow: 0 0 12px rgba(224, 131, 34, 0.6); }
         .uni-text-wrap h4 { color: #fff; font-size: 19px; font-family: 'Syne', sans-serif; font-weight: 700; margin: 0 0 4px 0; line-height: 1.2; }
+        .uni-text-wrap h4 a { font-family: 'Syne', sans-serif;}
         .uni-text-wrap p { font-size: 15px; color: #999; margin: 0; line-height: 1.5; font-weight: 400; }
         .uni-form-card { background: #161616; padding: 40px; border-radius: 16px; border: 1px solid #333; box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
         .uni-group { margin-bottom: 20px; }
@@ -256,9 +257,11 @@
         .uni-input, .uni-select, .uni-textarea { width: 100%; padding: 15px 20px; background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 8px; color: #fff; font-family: 'Manrope', sans-serif; font-size: 15px; outline: none; transition: 0.3s; }
         .uni-textarea { height: 120px; resize: vertical; line-height: 1.6; }
         .uni-input:focus, .uni-select:focus, .uni-textarea:focus { border-color: #E08322; background: #111; }
-        .uni-btn { width: 100%; background: #E08322; color: #fff; font-weight: 700; text-transform: uppercase; padding: 18px; border: none; border-radius: 50px; cursor: pointer; font-size: 15px; transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; }
+        .uni-btn { width: 100%; background: #E08322;border: 1px solid var(--brand-accent); color: #fff; font-weight: 700; text-transform: uppercase; padding: 18px; border: none; border-radius: 50px; cursor: pointer; font-size: 15px; transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; }
         .uni-btn:hover { border: 1px solid var(--brand-accent);color: var(--brand-accent); background: transparent; }
         .uni-form-card .two-col {display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;}
+
+        .invalid-input {color: #f94949;font-size: 14px;}
 
     .phone-group {display: grid;grid-template-columns: 110px 1fr;gap: 10px;}
     .uni-select {
@@ -607,6 +610,7 @@
         }
         .interlink-box:hover { transform: translateX(10px); }
         .interlink-content h5 { margin: 0; font-size: 1.2rem; }
+        .interlink-content {width: 78%;}
         .interlink-content p { margin: 0; font-size: 0.9rem; color: #888; }
         
         .interlink-btn { 

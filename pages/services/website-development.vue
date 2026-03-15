@@ -251,12 +251,12 @@
     })
 
     useSeoMeta({
-        title: ' Website Development & UX Design | Omni Mavens',
-        description:'Stop losing customers to slow sites. Our custom website development services deliver blazing speed and SEO-ready code. Build a 24/7 sales machine.',
+        title: ' Website Development Services for High-Performance Sites | Omni Mavens',
+        description:'Build fast, scalable websites designed to improve user experience, search rankings, and business growth with custom development solutions.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Website Development & UX Design | Omni Mavens',
-        ogDescription:'Stop losing customers to slow sites. Our custom website development services deliver blazing speed and SEO-ready code. Build a 24/7 sales machine..',
+        ogTitle: 'Website Development Services for High-Performance Sites | Omni Mavens',
+        ogDescription:'Build fast, scalable websites designed to improve user experience, search rankings, and business growth with custom development solutions.',
         twitterCard: 'summary_large_image',
     })
 

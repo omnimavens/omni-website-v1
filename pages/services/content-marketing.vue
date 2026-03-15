@@ -227,12 +227,12 @@
     })
 
     useSeoMeta({
-        title: ' Content Marketing Services | Drive Traffic & Leads',
-        description:'Elevate your brand with expert content marketing services. We create data-driven content that boosts SEO traffic and converts leads. Get your strategy now.',
+        title: ' Content Marketing Services for Traffic & Authority | Omni Mavens',
+        description:'Build authority and attract high-quality leads with strategic content marketing designed to boost visibility, trust, and conversions.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Content Marketing Services | Drive Traffic & Leads',
-        ogDescription:'Elevate your brand with expert content marketing services. We create data-driven content that boosts SEO traffic and converts leads. Get your strategy now.',
+        ogTitle: 'Content Marketing Services for Traffic & Authority    | Omni Mavens',
+        ogDescription:'Build authority and attract high-quality leads with strategic content marketing designed to boost visibility, trust, and conversions.',
         twitterCard: 'summary_large_image',
     })
 

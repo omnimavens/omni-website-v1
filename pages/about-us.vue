@@ -77,12 +77,12 @@
     })
 
     useSeoMeta({
-        title: ' About OmniMavens - The Digital Marketing Agency',
-        description: 'Meet the team behind Omni Mavens. We are a collective of passionate marketers, data scientists, and creatives building the future of digital growth.',
+        title: ' Digital Marketing Experts Focused on Real Growth | Omni Mavens',
+        description: 'We are Omni Mavens, a results-focused digital marketing agency helping businesses grow with data-driven strategies and scalable solutions.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'About OmniMavens - The Digital Marketing Agency',
-        ogDescription: 'Meet the team behind Omni Mavens. We are a collective of passionate marketers, data scientists, and creatives building the future of digital growth.',
+        ogTitle: 'Digital Marketing Experts Focused on Real Growth | Omni Mavens',
+        ogDescription: 'We are Omni Mavens, a results-focused digital marketing agency helping businesses grow with data-driven strategies and scalable solutions.',
         ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
         twitterCard: 'summary_large_image',
     })

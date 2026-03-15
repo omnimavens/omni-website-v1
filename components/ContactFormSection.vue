@@ -1,4 +1,5 @@
 <template>
+<Loader v-if="isSubmitting" :visible="isSubmitting" />
   <section class="uni-cta-section common-padding">
         <div class="container">
             <div class="uni-grid">
@@ -63,7 +64,6 @@
                         <label class="uni-label">Website URL <span style="color:#E08322">*</span></label>
                         <input 
                         v-model="state.form.url" 
-                        type="url" 
                         placeholder="https://yourcompany.com"
                         class="uni-input"
                         @input="methods.clearErrors"
@@ -167,8 +167,10 @@
 
 
                     <!-- Submit -->
-                    <button type="submit" class="uni-btn">
+                    <button type="submit" class="uni-btn" :disabled="isSubmitting">
+                    <span v-if="!isSubmitting">
                         Request Consultation <i class="fa-solid fa-arrow-right"></i>
+                    </span>
                     </button>
 
                     <p style="text-align:center;font-size:12px;color:#555;margin-top:15px;">
@@ -186,9 +188,12 @@
 <script setup>
 import { reactive } from "vue";
 import { useRouter } from "vue-router";
+import Loader from "@/components/Loader.vue";
+import { ref } from "vue";
 const router = useRouter();
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxij1am_jfuBlUzkLYDQ1CoXffm4ztUvYq01jbywI4IIPCCTYzN6reDUqjwrKfaqN9b/exec"; 
-
+const isSubmitting = ref(false);
+isSubmitting.value = false;
 const state = reactive({
   form: {
     url: "",
@@ -245,6 +250,8 @@ const methods = {
   methods.clearErrors();
 
   try {
+    // SHOW LOADER
+    isSubmitting.value = true;
     await fetch(GOOGLE_SCRIPT_URL, {
       method: "POST",
       mode: "no-cors", //  REQUIRED
@@ -276,8 +283,13 @@ const methods = {
     router.push("/thank-you");
 
   } catch (error) {
+    // HIDE LOADER (if redirect fails)
+    isSubmitting.value = false;
     console.error(error);
     alert("Something went wrong. Please try again.");
+  } finally {
+    // HIDE LOADER (if redirect fails)
+    isSubmitting.value = false;
   }
 },
 

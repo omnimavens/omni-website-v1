@@ -1,68 +1,74 @@
 <template>
-  <div id="flashlight-loader" :class="{ hide: isLoaded }" ref="loaderRef">
-    <div class="loader-hidden-layer">
-      <div class="loader-pattern"></div>
-      <div class="loader-brand">OMNI MAVENS<span>.</span></div>
-      <div class="loader-status">
-        Analyzing ROAS <span>{{ progress }}%</span>
-      </div>
+  <div class="orange-loader">
+    <div class="loader-content">
+      <div class="spinner"></div>
+      <h2 class="brand">OMNIMAVENS</h2>
+      <p class="status">Analyzing Strategy...</p>
     </div>
-
-    <div class="flashlight-mask"></div>
-    <div class="loader-cursor"></div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
 
-const loaderRef = ref(null);
-const progress = ref(0);
-const isLoaded = ref(false);
-
-let interval;
-
-// Set mouse spotlight position
-function handleMouse(e) {
-  if (!isLoaded.value && loaderRef.value) {
-    loaderRef.value.style.setProperty("--x", e.clientX + "px");
-    loaderRef.value.style.setProperty("--y", e.clientY + "px");
-  }
-}
-
-onMounted(() => {
-  // Mouse move spotlight
-  document.addEventListener("mousemove", handleMouse);
-
-  // Fake loading progress
-  interval = setInterval(() => {
-    progress.value += Math.floor(Math.random() * 3) + 1;
-    if (progress.value > 99) progress.value = 99;
-  }, 50);
-
-  // Simulated "window load"
-  window.addEventListener("load", () => {
-    clearInterval(interval);
-    progress.value = 100;
-
-    setTimeout(() => {
-      isLoaded.value = true;
-      document.body.classList.add("loaded");
-    }, 500);
-  });
-});
-
-onBeforeUnmount(() => {
-  document.removeEventListener("mousemove", handleMouse);
-  clearInterval(interval);
-});
 </script>
 
 <style scoped>
-/* Keep your original CSS here */
-.hide {
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.6s ease;
+.orange-loader {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+/* 🔥 Glowing Orange Spinner */
+.spinner {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 140, 0, 0.15);
+  border-top: 6px solid #E08322;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 25px rgba(255, 122, 0, 0.5);
+}
+
+/* Brand */
+.brand {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.brand span {
+  color: #E08322;
+}
+
+/* Status */
+.status {
+  color: #E08322;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 </style>

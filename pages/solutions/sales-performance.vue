@@ -137,12 +137,12 @@
     })
 
     useSeoMeta({
-        title: ' Improve Sales Performance & ROAS | Omni Mavens', // Will become "Home - My Amazing Site"
-        description: 'Accelerate revenue growth. We fix broken funnels, improve ROAS, and increase Customer Lifetime Value (LTV) for e-commerce and B2B brands.',
+        title: ' Sales Performance Optimization for Growing Businesses | Omni Mavens',
+        description: 'Boost your revenue with data-driven sales optimization strategies designed to improve conversion rates and maximize marketing ROI.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Get Found Online & Search Visibility - The Digital Marketing Agency',
-        ogDescription: 'Accelerate revenue growth. We fix broken funnels, improve ROAS, and increase Customer Lifetime Value (LTV) for e-commerce and B2B brands.',
+        ogTitle: ' Sales Performance Optimization for Growing Businesses | Omni Mavens',
+        ogDescription: 'Boost your revenue with data-driven sales optimization strategies designed to improve conversion rates and maximize marketing ROI.',
         ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
         twitterCard: 'summary_large_image',
     })

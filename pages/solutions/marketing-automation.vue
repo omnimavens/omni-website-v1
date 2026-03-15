@@ -137,12 +137,12 @@
     })
 
     useSeoMeta({
-        title: ' Marketing Automation & Retention Systems | Omni Mavens',
-        description: 'Scale without chaos. We build automated marketing systems (Email, SMS, CRM) that nurture leads and retain customers 24/7.',
+        title: ' Marketing Automation Services to Scale Faster | Omni Mavens',
+        description: 'Automate your marketing workflows and customer journeys with powerful automation solutions designed to increase efficiency and drive growth.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Get Found Online & Search Visibility - The Digital Marketing Agency',
-        ogDescription: 'Scale without chaos. We build automated marketing systems (Email, SMS, CRM) that nurture leads and retain customers 24/7.',
+        ogTitle: ' Marketing Automation Services to Scale Faster | Omni Mavens',
+        ogDescription: 'Automate your marketing workflows and customer journeys with powerful automation solutions designed to increase efficiency and drive growth.',
         ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
         twitterCard: 'summary_large_image',
     })

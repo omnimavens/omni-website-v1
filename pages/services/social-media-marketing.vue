@@ -266,12 +266,12 @@
     })
 
     useSeoMeta({
-        title: ' Social Media Marketing Services [Turn Likes to Leads]', 
-        description:'Stop posting into the void. Our data-driven social strategies turn followers into revenue. Expert management for FB, IG & LinkedIn. Get your free audit.',
+        title: 'Social Media Marketing Services That Drive Engagement | Omni Mavens', 
+        description:'Grow your brand with strategic social media marketing campaigns designed to increase engagement, traffic, and customer acquisition.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Social Media Marketing Services [Turn Likes to Leads]',
-        ogDescription:'Stop posting into the void. Our data-driven social strategies turn followers into revenue. Expert management for FB, IG & LinkedIn. Get your free audit..',
+        ogTitle: 'Social Media Marketing Services That Drive Engagement | Omni Mavens',
+        ogDescription:'Grow your brand with strategic social media marketing campaigns designed to increase engagement, traffic, and customer acquisition.',
         twitterCard: 'summary_large_image',
     })
 

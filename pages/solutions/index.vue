@@ -215,12 +215,12 @@ You don't want "SEO" or "PPC." You want revenue, visibility, and leads. We map o
     })
 
     useSeoMeta({
-        title: ' Digital Marketing Solutions', // Will become "Home - My Amazing Site"
-        description: 'Welcome to the OmniMavens.',
+        title: ' Digital Growth Solutions for Modern Businesses', // Will become "Home - My Amazing Site"
+        description: 'Discover scalable digital growth solutions including automation, lead generation, and marketing optimization designed to accelerate business growth.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Solutions | OmniMavens - The Digital Marketing Agency',
-        ogDescription: 'Your digital marketing agency focused on you, your business, your results.',
+        ogTitle: 'Digital Growth Solutions for Modern Businesses',
+        ogDescription: 'Discover scalable digital growth solutions including automation, lead generation, and marketing optimization designed to accelerate business growth.',
         ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
         twitterCard: 'summary_large_image',
     })

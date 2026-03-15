@@ -186,12 +186,12 @@
     })
 
     useSeoMeta({
-        title: ' SEO Services [Outrank Your Competitors]',
-        description: "Don't let competitors steal your customers. We build sustainable SEO strategies to increase visibility and drive high-quality leads. Get a free audit",
+        title: 'SEO Services That Drive Rankings, Traffic & Sales | Omni Mavens',
+        description: "Improve search rankings and drive consistent organic traffic with performance-focused SEO strategies built for long-term business growth.",
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'SEO Services [Outrank Your Competitors]',
-        ogDescription: "Don't let competitors steal your customers. We build sustainable SEO strategies to increase visibility and drive high-quality leads. Get a free audit",
+        ogTitle: 'SEO Services That Drive Rankings, Traffic & Sales | Omni Mavens',
+        ogDescription: "Improve search rankings and drive consistent organic traffic with performance-focused SEO strategies built for long-term business growth.",
         twitterCard: 'summary_large_image',
     })
 

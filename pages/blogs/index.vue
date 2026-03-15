@@ -14,19 +14,19 @@ Expert guides, data analysis, and strategies on Amazon FBA, SEO, PPC, and Digita
         <div class="container">
             <div class="featured-card" data-aos="fade-up">
                 <div class="featured-thumb-img">
-                    <img src="/public/images/andromeda-thumb.png" alt="Meta Andromeda Update" class="featured-img">
+                    <img src="/public/images/local-seo.png" alt="Local SEO" class="featured-img">
                 </div>
                 <div class="featured-content">
-                    <span class="meta-tag">Featured Report</span>
-                    <h2 class="featured-title">Meta Andromeda Update 2026: The Ultimate Strategy Guide</h2>
+                    <span class="meta-tag">Featured Blog</span>
+                    <h2 class="featured-title">How to Dominate Google Maps and Local AI Search</h2>
                     <p class="featured-desc">
-                         Why your old targeting hacks are failing, and how to master AI-driven ad retrieval.
+                        People are no longer searching only through traditional web results. They are discovering businesses through Google Maps, voice assistants, and AI-powered search experiences.
                     </p>
                     <div style="display: flex; align-items: center; gap: 20px; color: #666; font-size: 13px; margin-bottom: 30px;">
-                        <span><i class="fa-regular fa-clock"></i> 9 Min Read</span>
-                        <span><i class="fa-regular fa-calendar"></i> Jan 16, 2026</span>
+                        <span><i class="fa-regular fa-clock"></i> 12 Min Read</span>
+                        <span><i class="fa-regular fa-calendar"></i> March 08, 2026</span>
                     </div>
-                    <NuxtLink :to="{ name: 'meta-andromeda-update-strategy-guide' }" class="btn-primary">Read Full Report</NuxtLink>
+                    <NuxtLink :to="{ name: 'local-seo-playbook-google-maps-ai-search' }" class="btn-primary">Read Article</NuxtLink>
                 </div>
             </div>
         </div>
@@ -55,6 +55,21 @@ Expert guides, data analysis, and strategies on Amazon FBA, SEO, PPC, and Digita
 
                 <article class="article-card" data-category="tech" data-aos="fade-up" v-show="activeCategory === 'all' || activeCategory === 'tech'">
                     <div class="card-img-wrap">
+                        <img src="/public/images/andromeda-thumb.png" alt="Coding" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-cat">Tech</span>
+                            <span>Jan 16, 2026</span>
+                        </div>
+                        <h3 class="card-title"><NuxtLink :to="{ name: 'meta-andromeda-update-strategy-guide' }">Meta Andromeda Update 2026: The Ultimate Strategy Guide</NuxtLink></h3>
+                        <p class="card-desc">Why your old targeting hacks are failing, and how to master AI-driven ad retrieval.</p>
+                        <NuxtLink :to="{ name: 'meta-andromeda-update-strategy-guide' }" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></NuxtLink>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="tech" data-aos="fade-up" v-show="activeCategory === 'all' || activeCategory === 'tech'">
+                    <div class="card-img-wrap">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Coding" class="card-img">
                     </div>
                     <div class="card-content">
@@ -62,8 +77,8 @@ Expert guides, data analysis, and strategies on Amazon FBA, SEO, PPC, and Digita
                             <span class="card-cat">Tech</span>
                             <span>Nov 28, 2025</span>
                         </div>
-                        <h3 class="card-title"><a href="#">The State of Digital Marketing in 2026: AI, Privacy, and Profit</a></h3>
-                        <p class="card-desc">With Google SGE reshaping search and tracking pixels disappearing, the playbook has changed.</p>
+                        <h3 class="card-title"><NuxtLink :to="{ name: 'inner-blog' }">The Modern Digital Marketing Blueprint</NuxtLink></h3>
+                        <p class="card-desc">You aren’t losing sales because your ads are weak; you’re losing sales because your system is disconnected.</p>
                         <NuxtLink :to="{ name: 'inner-blog' }" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></NuxtLink>
                     </div>
                 </article>
@@ -84,7 +99,6 @@ Expert guides, data analysis, and strategies on Amazon FBA, SEO, PPC, and Digita
                     </div>
                 </article>
 
-                
 
                 <article class="article-card" data-category="ppc" data-aos="fade-up" data-aos-delay="100" v-show="activeCategory === 'all' || activeCategory === 'ppc'">
                     <div class="card-img-wrap">
@@ -101,65 +115,9 @@ Expert guides, data analysis, and strategies on Amazon FBA, SEO, PPC, and Digita
                     </div>
                 </article>
 
-                <article class="article-card" data-category="amazon" data-aos="fade-up" data-aos-delay="200" v-show="activeCategory === 'all' || activeCategory === 'amazon'">
-                    <div class="card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=2070&auto=format&fit=crop" alt="Amazon Boxes" class="card-img">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-meta">
-                            <span class="card-cat">Amazon FBA</span>
-                            <span>Oct 05, 2025</span>
-                        </div>
-                        <h3 class="card-title"><a href="#">Decoding the A9 Algorithm Update</a></h3>
-                        <p class="card-desc">Amazon is prioritizing visual CTR more than keywords. Here is how to adapt your gallery.</p>
-                        <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
 
-                <article class="article-card" data-category="social" data-aos="fade-up" v-show="activeCategory === 'all' || activeCategory === 'social'">
-                    <div class="card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop" alt="Creative Meeting" class="card-img">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-meta">
-                            <span class="card-cat">Branding</span>
-                            <span>Sep 28, 2025</span>
-                        </div>
-                        <h3 class="card-title"><a href="#">Color Psychology in E-Commerce</a></h3>
-                        <p class="card-desc">Why your "Trust Blue" logo might be boring your customers, and when to use "Neon."</p>
-                        <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
 
-                <article class="article-card" data-category="tech" data-aos="fade-up" v-show="activeCategory === 'all' || activeCategory === 'tech'">
-                    <div class="card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop" alt="Coding" class="card-img">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-meta">
-                            <span class="card-cat">Web Dev</span>
-                            <span>Sep 15, 2025</span>
-                        </div>
-                        <h3 class="card-title"><a href="#">Core Web Vitals: Speed = Revenue</a></h3>
-                        <p class="card-desc">Every second of load time drops conversion by 4%. Optimize your Liquid code now.</p>
-                        <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="article-card" data-category="seo" data-aos="fade-up" v-show="activeCategory === 'all' || activeCategory === 'seo'">
-                    <div class="card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop" alt="Local SEO" class="card-img">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-meta">
-                            <span class="card-cat">Local SEO</span>
-                            <span>Sep 10, 2025</span>
-                        </div>
-                        <h3 class="card-title"><a href="#">Dominate the "Map Pack"</a></h3>
-                        <p class="card-desc">Local SEO strategies for service businesses to get more calls from Google Maps.</p>
-                        <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
+               
 
             </div>
 
@@ -180,17 +138,17 @@ Expert guides, data analysis, and strategies on Amazon FBA, SEO, PPC, and Digita
 
 <script setup lang="ts">
     definePageMeta({
-        title: ' Insights & Intelligence | Omni Maven',
+        title: ' Insights & Intelligence | Omni Mavens',
         name: 'blogs'
     })
 
     useSeoMeta({
-        title: ' Insights & Intelligence | Omni Maven', // Will become "Home - My Amazing Site"
-        description: 'Omni Mavens Insights. Expert guides, data analysis, and strategies on Amazon FBA, SEO, PPC, and Digital Growth.',
+        title: 'Digital Marketing Insights, SEO & Growth Strategies', 
+        description: 'Explore expert insights on SEO, paid ads, AI search, and digital marketing strategies designed to help businesses increase traffic and revenue.',
         
         // Social Media Cards (Open Graph)
-        ogTitle: 'Insights & Intelligence | Omni Maven',
-        ogDescription: 'Omni Mavens Insights. Expert guides, data analysis, and strategies on Amazon FBA, SEO, PPC, and Digital Growth.',
+        ogTitle: 'Digital Marketing Insights, SEO & Growth Strategies',
+        ogDescription: 'Explore expert insights on SEO, paid ads, AI search, and digital marketing strategies designed to help businesses increase traffic and revenue.',
         ogImage: 'https://www.omnimavens.com/wp-content/uploads/2025/05/omnimavens-logo-888810.svg',
         twitterCard: 'summary_large_image',
     })
